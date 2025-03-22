@@ -10,6 +10,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Profile from './pages/Profile.jsx'
 import NotFound from './pages/NotFound.jsx';
 import Chikitaverse from './pages/Chikitaverse.jsx'
+import DiscordBot from './pages/DiscordBot.jsx'
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "/chikitaverse",
     element: <Chikitaverse/>
+  },
+  {
+    path: "/discordbot",
+    element: <DiscordBot/>
   }
 ])
 

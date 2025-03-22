@@ -9,7 +9,8 @@ function App() {
             <h1>The Chikitaverse Inc.</h1>
         </header>
         <nav id='navigator'>
-            <Nav img='logo192.png' page='/Chikitaverse' txt='Foto de perfil' text='Chikitaverse'/>
+            <Nav img='logo192.png' page='/chikitaverse' txt='Foto da Pagina' text='Chikitaverse'/>
+            <Nav img='logo192.png' page='/discordbot' txt='Foto da Pagina' text='Bot do Discord'/>
         </nav>
     </>
   );
