@@ -1,0 +1,12 @@
+
+#imgstyletrue {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #0C375A;
+    border-radius: 60%;
+}
+
+#imgstylefalse {
+    width: 150px;
+    height: 150px;
+}

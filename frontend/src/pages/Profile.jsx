@@ -1,7 +1,14 @@
+import { useEffect } from "react"
+
 export default function Profile() {
-    return (<>
-        <head>
-            <title>Chikitaverse - Profile</title>
-        </head>
-    </>)
+    
+    useEffect(() => {
+        document.title = 'Chikitaverse - Profile'
+    })
+    
+    return (
+        <>
+        <h1>Profile</h1>
+        </>
+    )
 }

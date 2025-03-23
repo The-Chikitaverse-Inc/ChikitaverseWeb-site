@@ -1,4 +1,4 @@
-// Depedencias
+//! Depedencias
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
@@ -6,30 +6,33 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
-// Pages
+//! Pages
 import Profile from './pages/Profile.jsx'
 import NotFound from './pages/NotFound.jsx';
 import Chikitaverse from './pages/Chikitaverse.jsx'
 import DiscordBot from './pages/DiscordBot.jsx'
 
+//! Routers
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    children: [
+      {
+        path: "/profile",
+        element: <Profile />
+      },
+      {
+        path: "/chikitaverse",
+        element: <Chikitaverse/>
+      },
+      {
+        path: "/discordbot",
+        element: <DiscordBot/>
+      }
+    ],
     errorElement: <NotFound />
   },
-  {
-    path: "/profile",
-    element: <Profile />
-  },
-  {
-    path: "/chikitaverse",
-    element: <Chikitaverse/>
-  },
-  {
-    path: "/discordbot",
-    element: <DiscordBot/>
-  }
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

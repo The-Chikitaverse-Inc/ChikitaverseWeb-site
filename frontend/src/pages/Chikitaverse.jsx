@@ -1,11 +1,14 @@
+import { useEffect } from "react"
 
 export default function Chikitaverse() {
 
+    useEffect(() => {
+        document.title = 'Chikitaverse - Multiverse'
+    })
+
     return (
+
         <>
-            <head>
-                <title>Chikitaverse - Multiverse</title>
-            </head>
             <h1>Chikitaverse</h1>
         </>
     )
