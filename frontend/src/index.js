@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 //! Pages
+import Home from './pages/Home/Home.jsx'
 import Profile from './pages/Profile.jsx'
 import NotFound from './pages/NotFound.jsx';
 import Chikitaverse from './pages/Chikitaverse.jsx'
@@ -16,11 +17,15 @@ import DiscordBot from './pages/DiscordBot.jsx'
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <App/>,
     children: [
       {
+        path: "/",
+        element: <Home/>
+      },
+      {
         path: "/profile",
-        element: <Profile />
+        element: <Profile/>
       },
       {
         path: "/chikitaverse",
@@ -31,7 +36,7 @@ const router = createBrowserRouter([
         element: <DiscordBot/>
       }
     ],
-    errorElement: <NotFound />
+    errorElement: <NotFound/>
   },
 ])
 

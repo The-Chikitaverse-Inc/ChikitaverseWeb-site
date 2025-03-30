@@ -24,8 +24,7 @@ function App() {
             <Nav img='logo192.png' page='/chikitaverse' txt='Foto da Pagina' text='Chikitaverse'/>
             <Nav img='logo192.png' page='/discordbot' txt='Foto da Pagina' text='Bot do Discord'/>
 
-            <iframe id='widget' src="https://discordapp.com/widget?id=1311765282389360650&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-
+            <iframe src="https://discordapp.com/widget?id=1311765282389360650&theme=dark"  allowtransparency="true" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" id='widget'></iframe>
           </nav>
 
           <section id='content'>

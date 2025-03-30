@@ -24,7 +24,7 @@
 
 #container {
     display: flex;
-    gap: 25px;
+    gap: 10px;
     justify-content: center;
 }
 
@@ -32,15 +32,18 @@
     background: #E6E6E6;
     
     padding: 25px;
-    margin: 15px 20px;
+    margin: 15px 5px;
 
     border: 1px solid #E6E6E6;
     border-radius: 15px;
+    box-sizing: border-box;
 
-    width: 0.5dvw;
-    height: 50%;
+    max-width: 22%;
+    width: 100%;
+    height: 100%;
 
-    flex-grow: 1;
+    flex-grow: 1.5;
+    flex-wrap: wrap;
     
     display: flex;
     flex-direction: column;
@@ -49,10 +52,24 @@
 }
 
 #widget {
-    margin: 25px;
+    border: none;
+
+    width: 70%;
+    height: 50dvh;
+
+    margin: 25px auto;
 }
 
 #content {
-    flex-grow: 2;
+    margin: 15px 5px;
+    padding: 10px;
+
+    background: #E6E6E6;
+    border: #E6E6E6 solid 1px;
+    border-radius: 15px;
+    box-sizing: border-box;
+
+    flex-wrap: wrap;
+    flex-grow: 1;
 }
 
