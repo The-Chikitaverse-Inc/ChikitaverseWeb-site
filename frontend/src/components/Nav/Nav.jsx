@@ -9,9 +9,9 @@ export default function Nav({ img, txt, page, text }) {
     const textChildren = text || "Erro"
 
     return (
-        <span id='container1'>
-            <img src={Image} alt={texAlt} id='img'/>
-            <Link to={toPage} id='link'>{textChildren}</Link>
+        <span class='container1'>
+            <img src={Image} alt={texAlt} class='img'/>
+            <Link to={toPage} class='link'>{textChildren}</Link>
         </span>
     );
 }

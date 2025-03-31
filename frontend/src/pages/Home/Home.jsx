@@ -1,4 +1,5 @@
 import { useEffect } from "react"
+import './Home.css'
 
 export default function Home() {
 
@@ -7,12 +8,11 @@ export default function Home() {
             })
 
     return (
-        <>
-            <h1>Bem vindo ao Chikitaverso!</h1>
-
-            <p>Olá, novo Chikita! Bem-vindo ao Chikitaverso, o lugar onde todos os multiversos da Rei Chikita se encontram na internet!</p>
-
+        <span id="home">
+            <h1>Home</h1>
             
-        </>
+            <img src="/chikita.gif" alt="Rei Chikita Gif" />
+
+        </span>
     )
 }
