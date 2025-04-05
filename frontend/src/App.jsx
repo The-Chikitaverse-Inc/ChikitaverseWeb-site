@@ -2,35 +2,56 @@ import { Outlet } from 'react-router-dom'
 import './App.css';
 
 //! Components
-import Nav from './components/Nav/Nav.jsx';
 import ImagePage from './components/ImagePage/ImagePage.jsx';
-
+import UserName from './components/UserName/UserName.jsx';
+import NavList from './components/NavList/NavList.jsx';
 
 function App() {
   return (
     <>
         <header id='header'>
 
-            <ImagePage page='/' img='logoChiktaverse.png' textalt='Logo do Chikitaverso' borderad={false} />
+            <ImagePage 
+                page='/'
+                img='logoChiktaverse.png'
+                textalt='Logo do Chikitaverso'
+                borderad={false} />
+    
             <h1>The Chikitaverse Inc.</h1>
-
         </header>
       
         <main id='container'>
         
-          <nav id='navigator'>
-            <ImagePage page='/profile' img='chikita.jpeg' textalt='Foto de perfil' borderad={true}/>
+          <aside id='aside'>
+            <ImagePage 
+                page='/profile'
+                img='chikita.jpeg'
+                textalt='Foto de perfil' 
+                borderad={true} />
+            
+            <UserName />
 
-            <Nav img='logo192.png' page='/chikitaverse' txt='Foto da Pagina' text='Chikitaverse'/>
-            <Nav img='logo192.png' page='/discordbot' txt='Foto da Pagina' text='Bot do Discord'/>
+            <iframe 
+                src="https://discordapp.com/widget?id=1311765282389360650&theme=dark"
+                allowtransparency="true"
+                sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+                id='widget' />
 
-            <iframe src="https://discordapp.com/widget?id=1311765282389360650&theme=dark"  allowtransparency="true" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" id='widget'></iframe>
-          </nav>
+          </aside>
 
           <section id='content'>
             <Outlet/>
+          <footer>
+              <p>&copy;2025 Todos os Direitos reservados - The Chikitaverse Inc.</p>
+          </footer>
           </section>
-        
+
+          <nav id='navigator'>
+              
+              <h3>Menu</h3>
+
+              <NavList page='/chikitaverse' img='blackhole.svg' figcap='Chikitaverso' />
+          </nav>
         </main>
     </>
   );
