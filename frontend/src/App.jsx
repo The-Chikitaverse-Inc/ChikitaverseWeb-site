@@ -51,6 +51,8 @@ function App() {
               <h3>Menu</h3>
 
               <NavList page='/chikitaverse' img='blackhole.svg' figcap='Chikitaverso' />
+              <NavList page='/discordbot' img='discord.svg' figcap='Discord Bot' />
+
           </nav>
         </main>
     </>
