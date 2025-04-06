@@ -40,7 +40,7 @@ function App() {
           </aside>
 
           <section id='content'>
-            <Outlet/>
+            <Outlet id='outlet' />
           <footer>
               <p>&copy;2025 Todos os Direitos reservados - The Chikitaverse Inc.</p>
           </footer>

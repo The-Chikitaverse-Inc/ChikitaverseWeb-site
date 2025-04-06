@@ -14,10 +14,12 @@
 }
 
 .nav img{
-    width: 50px;
-    height: 50px;
+    width: 38px;
+    height: 38px;
 }
 
 .nav p {
+    font-size: 12pt;
+
     display: inline;
 }

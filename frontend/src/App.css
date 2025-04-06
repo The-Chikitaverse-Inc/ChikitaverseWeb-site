@@ -99,9 +99,17 @@
 
     flex-wrap: wrap;
     flex-grow: 1;
+
+    display: flex;
+}
+
+#outlet {
+    flex-grow: 2;
 }
 
 #content footer {
+    flex-grow: 1;
+
     text-align: center;
 }
 
