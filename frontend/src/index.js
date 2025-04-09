@@ -11,7 +11,7 @@ import Home from './pages/Home/Home.jsx'
 import Profile from './pages/Profile.jsx'
 import NotFound from './pages/NotFound.jsx';
 import Chikitaverse from './pages/Chikitaverse.jsx'
-import DiscordBot from './pages/DiscordBot.jsx'
+import DiscordBot from './pages/DiscordBot/DiscordBot.jsx'
 
 //! Routers
 const router = createBrowserRouter([
@@ -31,13 +31,13 @@ const router = createBrowserRouter([
         path: "/chikitaverse",
         element: <Chikitaverse/>
       },
-      {
-        path: "/discordbot",
-        element: <DiscordBot/>
-      }
     ],
     errorElement: <NotFound/>
   },
+  {
+    path: "/discordbot",
+    element: <DiscordBot/>
+  }
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

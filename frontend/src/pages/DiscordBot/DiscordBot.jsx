@@ -1,4 +1,5 @@
 import { useEffect } from "react"
+import './DiscordBot.css'
 
 export default function DiscordBot() {
     
@@ -9,6 +10,7 @@ export default function DiscordBot() {
     return (
         <>
             <h1>Discord Bot</h1>
+            
         </>
     )
 }

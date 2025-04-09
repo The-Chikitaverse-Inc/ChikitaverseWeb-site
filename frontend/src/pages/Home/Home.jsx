@@ -2,7 +2,7 @@ import { useEffect } from "react"
 import './Home.css'
 
 //! Componentes
-import Nav from "../../components/Nav/Nav.jsx"
+import NavHome from "../../components/NavHome/NavHome.jsx"
 
 export default function Home() {
 
@@ -23,10 +23,10 @@ export default function Home() {
 
             </span>
 
-            <section>
-                <h3>Chikitaverso:</h3>
+            <section id="secchikitaverse">
+                <h3>Chikitaverse Games:</h3>
 
-                
+                <NavHome link='https://www.roblox.com/pt/games/108630188152409/ChikitaVoice' img='roblox.svg' title='Chikita Voice' />
             </section>
         </span>
     )
