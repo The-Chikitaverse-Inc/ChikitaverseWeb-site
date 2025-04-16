@@ -1,0 +1,32 @@
+.navlist {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22pt;
+    font-family: 'Pixelify Sans', sans-serif;
+    text-decoration: none;
+    color: #0A1128;
+
+    margin: 8px;
+
+
+    transition: all 0.5s ease;
+}
+
+.navlist:hover {
+    background: #3897E5;
+    border: #3897E5 solid 1px;
+    border-radius: 15px;
+
+    color: #fff;
+}
+
+.navlist img {
+    /*Todo Testa mudar a cor do svg */
+}
+
+.navlist h6 {
+    margin: 0;
+}
