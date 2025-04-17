@@ -57,3 +57,29 @@ body {
     font-weight: 300;
 }
 
+#buttonchikitaverse {
+  height: 4dvh;
+  width: 5.5dvw;
+
+  background: #3897E5;
+  border: #3897E5 solid 1px;
+  border-radius: 10px;
+
+  color: #E0ECF0;
+  font-size: 11pt;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+#buttonchikitaverse:hover {
+  background: #9ccbf2;
+  border: #9ccbf2 solid 1px;
+  border-radius: 15px;
+
+  color: #0A1128;
+
+  font-weight: 300;
+
+  box-shadow: #282727 0 3px 2px 0;
+}
