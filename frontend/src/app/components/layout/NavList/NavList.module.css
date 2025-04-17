@@ -2,7 +2,7 @@
     display: flex;
     gap: 3px;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
 
     font-size: 22pt;
     font-family: 'Pixelify Sans', sans-serif;
@@ -10,21 +10,18 @@
     color: #0A1128;
 
     margin: 8px;
+    padding: 4px;
+    box-sizing: border-box;
 
-
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 
 .navlist:hover {
-    background: #3897E5;
-    border: #3897E5 solid 1px;
+    background: #b9b9b9;
+    border: #b9b9b9 solid 1px;
     border-radius: 15px;
 
-    color: #fff;
-}
-
-.navlist img {
-    /*Todo Testa mudar a cor do svg */
+    box-shadow: #000 0 2px 3px 0;
 }
 
 .navlist h6 {

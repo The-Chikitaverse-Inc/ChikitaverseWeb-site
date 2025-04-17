@@ -10,7 +10,7 @@ export default function NavList({ page, img, text }) {
 
     return (
         <Link href={vpage} className={styles.navlist}>
-            <Image src={vimg} width={30} height={30} alt="Menu Chikitaverse" />
+            <Image src={vimg} width={30} height={30} alt="Menu Chikitaverse"/>
             <h6>{vtext}</h6>
         </Link>
     )

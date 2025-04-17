@@ -1,8 +1,10 @@
+//! Components
+import Header from "../components/layout/Header/Header"
+
 export default function Chikitaverse() {
     return (
         <>
-            
-            <h1>Chikitaverse</h1>
+            <Header/>
         </>
     )
 }

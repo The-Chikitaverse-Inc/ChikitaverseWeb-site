@@ -3,35 +3,8 @@
 body {
   font-family: 'Pixelify Sans', sans-serif;
   color: #0A1128;
-}
-
-#header {
-  background: #3897E5;
-  border: #3897E5 solid 1px;
-  border-radius: 15px;
-  box-sizing: border-box;
-  
-  display: flex;
-  align-items: center;
-  gap: 10px;
-
-  padding: 8px;
-  margin: 12px 110px;
-
-
-  color: #E0ECF0;
-}
-
-#header h1{
-  font-family: 'Pixelify Sans', sans-serif;
-  font-size: 30pt;
-  font-weight: 800;
-
-  display: inline;
 
   margin: 0;
-
-  color: #E0ECF0;
 }
 
 #maincont {
@@ -46,12 +19,41 @@ body {
   border: #E6E6E6 solid 1px;
   border-radius: 15px;
 
-  height: 30dvh;
+  height: 40dvh;
   width: 15dvw;
 
   text-align: center;
+
+  flex-grow: 1;
 }
 
 #menu h2 {
   margin: 5px 0;
 }
+
+#cotent {
+  background: #E6E6E6;
+  border: #E6E6E6 solid 1px;
+  border-radius: 15px;
+
+  width: 90%;
+  height: 70dvh;
+
+  padding: 10px 30px;
+  box-sizing: border-box;
+
+  flex-grow: 2;
+}
+
+#cotent h2 {
+    font-size: 30pt;
+    font-weight: 800;
+    
+    margin: 10px 0;
+}
+
+#cotent p {
+    font-size: 18pt;
+    font-weight: 300;
+}
+
