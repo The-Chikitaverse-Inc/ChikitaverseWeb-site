@@ -26,13 +26,10 @@ export default function Home() {
 
               <p>Esta buscando um multiverso para se divertir? Veio ao lugar certo!</p>
               
-              <Image src='/chikita.gif' width={260} height={260} alt="Chikita gif"/>
-              //Todo: Ajustar css da imagem
-              
-              <Link href='/chikitaverse'>
+              <Link href='/chikitaverse' className="link"> 
                 <button id="buttonchikitaverse">Clique Aqui!</button>
               </Link>
-
+              
             </article>
         <footer>
           <p>&copy; {currentYear} The Chikitaverse Inc. - Todos os direitos reservados</p>

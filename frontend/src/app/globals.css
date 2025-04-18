@@ -61,6 +61,8 @@ body {
   height: 4dvh;
   width: 5.5dvw;
 
+  display: block;
+
   background: #3897E5;
   border: #3897E5 solid 1px;
   border-radius: 10px;
@@ -68,6 +70,9 @@ body {
   color: #E0ECF0;
   font-size: 11pt;
   font-weight: 600;
+  
+
+  margin: 20px 0;
 
   transition: all 0.3s ease;
 }
@@ -82,4 +87,8 @@ body {
   font-weight: 300;
 
   box-shadow: #282727 0 3px 2px 0;
+}
+
+.link {
+  text-decoration: none;
 }
