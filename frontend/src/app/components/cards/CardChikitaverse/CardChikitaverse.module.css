@@ -1,0 +1,34 @@
+.card_ch {
+    display: inline-block;
+    background: #1c4c73;
+    border: #1c4c73 solid 1px;
+    border-radius: 15px;
+
+    padding: 18px;
+    margin: 8px 10px;
+
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+
+    transition: all 0.3s ease;
+}
+
+.card_ch:hover {
+    border: #325068 solid 1px;
+    border-radius: 25px;
+    background: #325068;
+
+    box-shadow: #000 0 4px 3px 0;
+}
+
+.card_ch h4 {
+    display: block;
+    margin: 5px 0;
+}
+
+.card_ch p {
+    display: inline-block;
+
+    margin: 0;
+}
