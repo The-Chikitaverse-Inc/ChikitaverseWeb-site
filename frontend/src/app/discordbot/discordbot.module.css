@@ -1,7 +1,3 @@
-.page {
-    color: #E0ECF0;
-}
-
 .page h2 {
     color: #0A1128;
 }
@@ -12,12 +8,19 @@
     border-radius: 15px;
     
     display: flex;
-    gap: 20px;
-    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
 
     padding: 16px 20px;
 
     width: 35dvw;
+}
+
+.headerbot {
+    display: flex;
+    align-items: center;
+    gap: 18px;
 }
 
 .botprofile {
@@ -25,5 +28,52 @@
 }
 
 .page span h3 {
-    font-size: 20pt;
+    font-size: 18pt;
+}
+
+.page span div h4 {
+    font-size: 14pt;
+    margin: 10px 0;
+}
+
+.page span div p {
+    font-size: 12pt;
+    line-height: 22px;
+
+    border-left: #dbdee1 solid 5px;
+    border-radius: 3px;
+
+    margin: 20px 0;
+    padding: 0 8px;
+}
+
+.buttonbot {
+    background: #fff;
+    border: #fff solid 1px;
+    border-radius: 12px;
+
+    padding: 5px 10px;
+    margin: 4px 10px;
+
+    width: auto;
+    height: 4dvh;
+    
+
+    color: #5562ea;
+    font-family: 'Pixelify Sans';
+    font-weight: 600;
+    font-size: 14pt;
+
+    transition: all 0.3s ease;
+}
+
+.buttonbot:hover {
+    box-shadow: #16193b 0 3px 2px 0;
+    font-weight: 800;
+    background: #eaeaea;
+}
+
+.buttonbot a {
+    text-decoration: none;
+    color: #5562ea;
 }

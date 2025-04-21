@@ -10,7 +10,7 @@ export default function Chikitaverse() {
             <Section>
                 <article>
 
-                    <h2>Chikitaverse Games:</h2>
+                    <h2>Chikitaverse</h2>
 
                         <CardChikitaverse logo='chess.png' link='https://www.chess.com/club/the-chikitaverse-inc/join' title='Clube de Xadrez' game='Chess.com' />
                         <CardChikitaverse logo='roblox.png' link='https://www.roblox.com/pt/communities/35567222/The-Chikitaverse-Inc#!/about' title='TCInc. Comunidade' game='Roblox'/>

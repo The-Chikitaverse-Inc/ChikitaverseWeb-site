@@ -1,0 +1,29 @@
+.botbutton {
+    background: #fff;
+    border: #fff solid 1px;
+    border-radius: 12px;
+
+    padding: 5px 10px;
+    margin: 4px 10px;
+
+    width: auto;
+    height: 4dvh;
+
+    color: #5562ea;
+    font-family: 'Pixelify Sans';
+    font-weight: 600;
+    font-size: 14pt;
+
+    transition: all 0.3s ease;
+}
+
+.botbutton:hover {
+    box-shadow: #16193b 0 3px 2px 0;
+    font-weight: 800;
+    background: #eaeaea;
+}
+
+.botbutton a {
+    text-decoration: none;
+    color: #5562ea;
+}

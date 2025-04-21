@@ -7,9 +7,11 @@
     padding: 10px;
     margin: 8px 10px;
 
-    max-width: 100px;
 
-    line-height: 18px;
+    max-width: 180px;
+    min-width: 180px;
+
+    line-height: 25px;
     color: #fff;
     text-decoration: none;
     text-align: center;
@@ -28,10 +30,14 @@
 .card_ch h4 {
     display: block;
     margin: 5px 0;
+
+    font-size: 12pt;
 }
 
 .card_ch p {
     display: inline-block;
+
+    font-size: 10pt;
 
     margin: 0;
 }

@@ -1,7 +1,7 @@
 /* @import "tailwindcss"; */
 
 body {
-  font-family: 'Pixelify Sans', sans-serif;
+  font-family: 'Press Start 2P', sans-serif;
   color: #0A1128;
 
   margin: 0;
@@ -23,6 +23,7 @@ body {
   color: #E0ECF0;
   font-size: 11pt;
   font-weight: 600;
+  font-family: 'Pixelify Sans';
   
 
   margin: 20px 0;

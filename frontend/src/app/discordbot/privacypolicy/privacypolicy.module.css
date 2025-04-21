@@ -1,0 +1,15 @@
+.privacylaws span {
+    display: block;
+    min-height: 10dvh;
+    height: auto;
+
+    color: #0A1128;
+    line-height: 20px;
+
+    padding: 10px;
+}
+
+.lawslink {
+    text-decoration: none;
+    color: #0A1128;
+}
