@@ -47,7 +47,7 @@ export default function PrivacyPolicy() {
                         <h4>Seus direitos</h4>
                             <p>Se você quiser saber mais sobre o que o bot faz no seu servidor, ou se quiser que ele seja removido, é só expulsar ele do servidor ou entrar em contato com o criador:</p>
                                 <ul>
-                                    <li><strong>Contato:</strong> <a className={styles.lawslink} href="https://github.com/devdaniel28" target="_blank">@dvcDaniel</a></li>
+                                    <li><strong>Contato:</strong> <a className={styles.lawslink} href="mailto:chikitaverso.contato@gmail.com" target="_blank">The Chikitaverse Inc.</a></li>
                                     <li><strong>Código aberto:</strong> <a className={styles.lawslink} href="https://github.com/The-Chikitaverse-Inc/ChikitaBot" target="_blank">GitHub - ChikitaBot</a></li>
                                 </ul>
 

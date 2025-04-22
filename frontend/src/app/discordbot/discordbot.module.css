@@ -6,7 +6,8 @@
     background: #5562ea;
     border: #5562ea solid 1px;
     border-radius: 15px;
-    
+    color: #eaeaea;
+
     display: flex;
     flex-direction: column;
     gap: 10px;

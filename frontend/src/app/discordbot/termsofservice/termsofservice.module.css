@@ -1,4 +1,4 @@
-.privacylaws span {
+.lawsservice span {
     display: block;
     min-height: 10dvh;
     height: auto;
@@ -14,10 +14,10 @@
     color: #5562ea;
 }
 
-.privacylaws span h3 {
+.lawsservice span h3 {
     font-weight: 900;
 }
 
-.privacylaws span p, .privacylaws span ul li {
+.lawsservice span p, .lawsservice span ul li {
     font-weight: 100;
 }
