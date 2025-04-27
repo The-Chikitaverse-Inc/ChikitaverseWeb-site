@@ -1,11 +1,11 @@
 import styles from './termsofservice.module.css'
 
 //! Coponents
-import Header from "@/app/components/layout/Header/Header.jsx"
-import Section from "@/app/components/layout/Section/Section.jsx"
+import Header from '@/components/layout/Header/Header'
+import Section from '@/components/layout/Section/Section'
 
 export default function TermsOfService() {
-    return ( //Todo: Fazer os Termos de Serviço
+    return (
         <>
             <Header/>
             <Section>

@@ -1,7 +1,8 @@
+'use-client'
 //! Components
-import Header from "../components/layout/Header/Header.jsx"
-import CardChikitaverse from '../components/cards/CardChikitaverse/CardChikitaverse'
-import Section from "../components/layout/Section/Section.jsx"
+import Header from "@/components/layout/Header/Header"
+import Section from "@/components/layout/Section/Section"
+import CardChikitaverse from "@/components/ui/CardChikitaverse/CardChikitaverse"
 
 export default function Chikitaverse() {
     return (

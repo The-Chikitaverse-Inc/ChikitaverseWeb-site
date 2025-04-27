@@ -1,10 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from './Header.module.css'
+import '../../../app/globals.css'
+
+//! Components
+import ThemeButton from "@/components/ui/ThemeButton/ThemeButton";
 
 export default function Header() {
     return(
-        <header className={styles.header}> 
+        <header className={` ${styles.header} highlightcolors `}> 
           <Link href='/'>
           <Image  //* Logo do Chikitaverse
             src='/logoChikitaverse.png' 
@@ -18,6 +22,8 @@ export default function Header() {
           </Link>
 
           <h1>The Chikitaverse Inc.</h1>
+
+            <ThemeButton/>
         </header>
     )
 }

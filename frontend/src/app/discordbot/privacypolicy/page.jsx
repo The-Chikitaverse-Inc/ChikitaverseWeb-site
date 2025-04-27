@@ -1,8 +1,8 @@
 import styles from './privacypolicy.module.css'
 
 //! Coponents
-import Header from "@/app/components/layout/Header/Header";
-import Section from "@/app/components/layout/Section/Section";
+import Header from '@/components/layout/Header/Header'
+import Section from '@/components/layout/Section/Section'
 
 export default function PrivacyPolicy() {
     return(

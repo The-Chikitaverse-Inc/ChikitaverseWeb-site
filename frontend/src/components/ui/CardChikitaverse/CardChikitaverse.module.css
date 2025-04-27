@@ -1,5 +1,8 @@
 .card_ch {
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+
     background: #1c4c73;
     border: #1c4c73 solid 1px;
     border-radius: 15px;
@@ -7,14 +10,12 @@
     padding: 10px;
     margin: 8px 10px;
 
-
     max-width: 180px;
     min-width: 180px;
 
     line-height: 25px;
     color: #fff;
     text-decoration: none;
-    text-align: center;
 
     transition: all 0.3s ease;
 }

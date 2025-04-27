@@ -1,6 +1,4 @@
 .menu {
-    background: #E6E6E6;
-    border: #E6E6E6 solid 1px;
     border-radius: 15px;
 
     height: 40dvh;
@@ -22,10 +20,6 @@
 }
 
 .navaside {
-    background: #b9b9b9;
-    border: #b9b9b9 solid 1px;
-    border-radius: 15px;
-
     margin: 10px;
 
     flex-grow: 1;
@@ -36,8 +30,4 @@
     gap: 20px;
 
     transition: all 0.3s ease;
-}
-
-.navaside:hover {
-    box-shadow: #000 0 3px 2px 0;
 }

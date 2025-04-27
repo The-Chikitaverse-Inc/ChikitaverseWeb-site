@@ -1,12 +1,13 @@
 import Image from 'next/image'
 import styles from './Aside.module.css'
+import '../../../app/globals.css'
 
 //! Coponents
 import NavList from '../NavList/NavList'
 
 export default function Aside() {
     return(
-        <aside className={styles.menu}>
+        <aside className={` ${styles.menu} glcolors `}>
             <span>
                 <h2>Menu</h2>
                     <NavList page='/' img='home.svg' text='Home'/>

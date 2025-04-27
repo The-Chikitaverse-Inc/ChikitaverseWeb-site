@@ -1,44 +1,79 @@
-@import "tailwindcss"; 
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background-color: #fff;
+  --other-background-color: #E6E6E6;
+  --text-color: #0A1128;
+  --highlightcolors: #3897E5;
+}
+
+.dark {
+  --background-color: #1C1A1A;
+  --other-background-color: #3A3A3A;
+  --text-color: #E0E1E3;
+  --highlightcolors: #1C4B72;
+}
 
 body {
-  font-family: 'Press Start 2P', sans-serif;
-  color: #0A1128;
+    font-family: 'Press Start 2P', sans-serif;
+    color: var(--text-color);
 
-  margin: 0;
-}
+    background-color: var(--background-color);
 
-#linkbuttonchikitaverse a{
-  text-decoration: none;
-  width: 20dvw;
-}
+    margin: 0;
+  }
 
-#linkbuttonchikitaverse a button {
-  height: 4dvh;
-  width: 5.5dvw;
-
-  background: #3897E5;
-  border: #3897E5 solid 1px;
-  border-radius: 10px;
-
-  color: #E0ECF0;
-  font-size: 11pt;
-  font-weight: 600;
-  font-family: 'Pixelify Sans';
+  #linkbuttonchikitaverse a{
+    text-decoration: none;
+    width: 20dvw;
+  }
   
+  #linkbuttonchikitaverse a button {
+    height: 4dvh;
+    width: 5.5dvw;
+  
+    background: var(--highlightcolors);
+    border: var(--highlightcolors) solid 1px;
+    border-radius: 10px;
+  
+    color: #E0ECF0;
+    font-size: 11pt;
+    font-weight: 600;
+    font-family: 'Pixelify Sans';
+    
+  
+    margin: 20px 0;
+  
+    transition: all 0.3s ease;
+  }
+  
+  #linkbuttonchikitaverse a button:hover {
+    background: #9ccbf2;
+    border: #9ccbf2 solid 1px;
+    border-radius: 15px;
+  
+    color: #0A1128;
+  
+    font-weight: 300;
+  
+    box-shadow: #282727 0 3px 2px 0;
+  }
 
-  margin: 20px 0;
+/** Theme Color Config */
 
-  transition: all 0.3s ease;
+.glcolors {
+  background: var(--other-background-color);
+  border: var(--other-background-color) solid 1px; 
 }
 
-#linkbuttonchikitaverse a button:hover {
-  background: #9ccbf2;
-  border: #9ccbf2 solid 1px;
-  border-radius: 15px;
+.textcolor {
+  color: var(--text-color);
+}
 
-  color: #0A1128;
-
-  font-weight: 300;
-
-  box-shadow: #282727 0 3px 2px 0;
+.highlightcolors {
+  background: var(--highlightcolors);
+  border: var(--highlightcolors) solid 1px;
 }

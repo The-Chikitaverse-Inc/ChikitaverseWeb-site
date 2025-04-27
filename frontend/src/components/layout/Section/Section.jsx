@@ -8,7 +8,7 @@ export default function Section({ children }) {
     return (
         <section className={styles.maincont}>
                 <Aside/>
-                <main className={styles.cotent}>
+                <main className={`${styles.cotent} glcolors`}>
                   {children}
                   <Footer className={styles.footer} />
                 </main>

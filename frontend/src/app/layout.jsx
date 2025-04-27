@@ -1,6 +1,10 @@
 import { Geist, Geist_Mono, Pixelify_Sans, Press_Start_2P } from "next/font/google";
 import "./globals.css";
 
+//! Components
+import ProviderTheme from "@/providers/theme-provider.jsx";
+import { ThemeProvider } from "next-themes";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -16,7 +20,7 @@ const pixelifySans = Pixelify_Sans({
   subsets: ["latin"]
 })
 
-export const pressStart2P = Press_Start_2P({
+const pressStart2P = Press_Start_2P({
   variable: '--font-press-start-2p',
   subsets: ['latin'],
   weight: '400',
@@ -33,7 +37,14 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${pixelifySans.variable} ${pressStart2P.variable} antialiased`}
       >
-        {children}
+        <ThemeProvider 
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
