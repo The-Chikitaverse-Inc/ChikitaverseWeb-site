@@ -8,6 +8,7 @@
   --other-background-color: #E6E6E6;
   --text-color: #0A1128;
   --highlightcolors: #3897E5;
+  --highlighthover: #9ccbf2;
 }
 
 .dark {
@@ -15,6 +16,7 @@
   --other-background-color: #3A3A3A;
   --text-color: #E0E1E3;
   --highlightcolors: #1C4B72;
+  --highlighthover: #5c8cb3;
 }
 
 body {
@@ -22,6 +24,7 @@ body {
     color: var(--text-color);
 
     background-color: var(--background-color);
+    transition: all 0.5s ease-out;
 
     margin: 0;
   }
@@ -51,11 +54,11 @@ body {
   }
   
   #linkbuttonchikitaverse a button:hover {
-    background: #9ccbf2;
-    border: #9ccbf2 solid 1px;
+    background: var(--highlighthover);
+    border: var(--highlighthover) solid 1px;
     border-radius: 15px;
   
-    color: #0A1128;
+    color: var(--text-color);
   
     font-weight: 300;
   
