@@ -1,0 +1,9 @@
+.menu {
+    min-width: 2.5dvw;
+    width: min-content;
+    height: 0.8dvh;
+    background: #E0ECF0;
+    border-radius: 10px;
+
+    margin: 8px;
+}

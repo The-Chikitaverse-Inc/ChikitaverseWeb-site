@@ -5,11 +5,12 @@ import styles from './Header.module.css'
 
 //! Components
 import ThemeButton from "@/components/ui/ThemeButton/ThemeButton";
+import NavBar from '@/components/ui/NavBar/NavBar';
 
 export default function Header() {
     return(
         <header className={` ${styles.header} highlightcolors `}> 
-          <Link href='/'>
+          <Link href='/' className={styles.logo}>
           <Image  //* Logo do Chikitaverse
             src='/logoChikitaverse.png' 
             alt="Logo" 
@@ -23,6 +24,7 @@ export default function Header() {
 
           <h1>The Chikitaverse Inc.</h1>
 
+            <NavBar/>
             <ThemeButton className={styles.theme} />
         </header>
     )

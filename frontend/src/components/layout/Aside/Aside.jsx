@@ -1,5 +1,4 @@
 import '../../css/theme.css'
-import Image from 'next/image'
 import styles from './Aside.module.css'
 
 //! Coponents
@@ -73,6 +72,7 @@ export default function Aside() {
                         </g>
                     </svg>
                 </LinkSocial>
+
             </nav>
         </aside>
     )

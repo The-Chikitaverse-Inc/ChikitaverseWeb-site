@@ -1,7 +1,8 @@
 .menu {
     border-radius: 15px;
 
-    height: 40dvh;
+    height: min-content;
+    min-height: 40dvh;
     width: 15dvw;
 
     text-align: center;
@@ -30,4 +31,18 @@
     gap: 20px;
 
     transition: all 0.3s ease;
+}
+
+
+@media only screen and (max-width: 850px) {
+    .menu {
+        border-radius: 15px;
+        display: none;
+
+        height: min-content;
+        min-height: 40dvh;
+        width: 15dvw;
+    
+        text-align: center;
+    }
 }
