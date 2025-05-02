@@ -3,38 +3,37 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/** Tema Dark */
+
 :root {
   --background-color: #fff;
-  --other-background-color: #E6E6E6;
-  --text-color: #0A1128;
-  --highlightcolors: #3897E5;
   --highlighthover: #9ccbf2;
+  --highlightcolors: #3897E5;
 }
 
 .dark {
   --background-color: #1C1A1A;
-  --other-background-color: #3A3A3A;
-  --text-color: #E0E1E3;
-  --highlightcolors: #1C4B72;
   --highlighthover: #5c8cb3;
+  --highlightcolors: #1C4B72;
 }
+
+/** Estilos globais  */
 
 body {
     font-family: 'Press Start 2P', sans-serif;
     color: var(--text-color);
 
     background-color: var(--background-color);
-    transition: all 0.5s ease-out;
 
     margin: 0;
-  }
+}
 
-  #linkbuttonchikitaverse a{
+#linkbuttonchikitaverse a{
     text-decoration: none;
     width: 20dvw;
-  }
+}
   
-  #linkbuttonchikitaverse a button {
+#linkbuttonchikitaverse a button {
     height: 4dvh;
     width: 5.5dvw;
   
@@ -51,9 +50,9 @@ body {
     margin: 20px 0;
   
     transition: all 0.3s ease;
-  }
+}
   
-  #linkbuttonchikitaverse a button:hover {
+#linkbuttonchikitaverse a button:hover {
     background: var(--highlighthover);
     border: var(--highlighthover) solid 1px;
     border-radius: 15px;
@@ -63,20 +62,40 @@ body {
     font-weight: 300;
   
     box-shadow: #282727 0 3px 2px 0;
-  }
-
-/** Theme Color Config */
-
-.glcolors {
-  background: var(--other-background-color);
-  border: var(--other-background-color) solid 1px; 
 }
 
-.textcolor {
-  color: var(--text-color);
+#notfound {
+  display: inline-flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 35dvh;
+  
 }
 
-.highlightcolors {
+#notfound div {
+  display: flex;
+  gap: 30px;
+}
+
+#notfound div h1 {
+  font-size: 25pt;
+}
+
+/*Todo: Alinhar essa bagaça */
+
+#notfound span {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#nfbutton {
   background: var(--highlightcolors);
   border: var(--highlightcolors) solid 1px;
+  border-radius: 15px;
+  
+  padding: 8px;
 }

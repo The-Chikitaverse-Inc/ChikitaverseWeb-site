@@ -5,7 +5,7 @@ import ThemeButton from "@/components/ui/ThemeButton/ThemeButton";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Header/>
       <Section>
         <article>
@@ -20,6 +20,6 @@ export default function Home() {
         </span>
         </article>
       </Section>
-    </div>
+    </>
   );
 }

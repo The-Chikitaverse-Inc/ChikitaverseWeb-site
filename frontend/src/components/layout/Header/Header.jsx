@@ -1,7 +1,7 @@
+import '../../css/theme.css'
 import Image from "next/image";
 import Link from "next/link";
 import styles from './Header.module.css'
-import '../../../app/globals.css'
 
 //! Components
 import ThemeButton from "@/components/ui/ThemeButton/ThemeButton";
@@ -23,7 +23,7 @@ export default function Header() {
 
           <h1>The Chikitaverse Inc.</h1>
 
-            <ThemeButton/>
+            <ThemeButton className={styles.theme} />
         </header>
     )
 }

@@ -1,5 +1,5 @@
+import '../../css/theme.css'
 import styles from './Footer.module.css'
-import '../../../app/globals.css'
 
 export default function Footer() {
     const date = new Date()

@@ -1,3 +1,4 @@
+import '@/components/css/theme.css'
 import styles from './termsofservice.module.css'
 
 //! Coponents
@@ -9,7 +10,7 @@ export default function TermsOfService() {
         <>
             <Header/>
             <Section>
-                <article className={styles.lawsservice}>
+                <article className={`${styles.lawsservice} textcolor`}>
                     <h2>Discord Bot: Termos de Serviço</h2>
                         <span>
                             <h2>Termos de Serviço — Chikita Bot</h2>

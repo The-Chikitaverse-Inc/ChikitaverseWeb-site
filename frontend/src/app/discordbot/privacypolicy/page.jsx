@@ -1,3 +1,4 @@
+import '@/components/css/theme.css'
 import styles from './privacypolicy.module.css'
 
 //! Coponents

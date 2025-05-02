@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@custom-variant dark (&:is(.dark *));
+
+:root {
+    --other-background-color: #E6E6E6;
+    --highlightcolors: #3897E5;
+    --text-color: #0A1128;
+    --navlist-hover: #b9b9b9;
+}
+
+.dark {
+    --other-background-color: #3A3A3A;
+    --highlightcolors: #1C4B72;
+    --text-color: #E0E1E3;
+    --navlist-hover: #5d5d5d;
+}
+
+.glcolors {
+    background: var(--other-background-color);
+    border: var(--other-background-color) solid 1px; 
+}
+  
+.textcolor, .textcolor p {
+    color: var(--text-color);
+}
+  
+.textcolor svg {
+    fill: var(--text-color);
+}
+
+.highlightcolors {
+    background: var(--highlightcolors);
+    border: var(--highlightcolors) solid 1px;
+}
+
+.navhover:hover {
+  background: var(--navlist-hover);
+  border: var(--navlist-hover) solid 1px;
+
+}

@@ -1,8 +1,8 @@
 import { Geist, Geist_Mono, Pixelify_Sans, Press_Start_2P } from "next/font/google";
 import "./globals.css";
+import '@/components/css/theme.css'
 
 //! Components
-import ProviderTheme from "@/providers/theme-provider.jsx";
 import { ThemeProvider } from "next-themes";
 
 const geistSans = Geist({
@@ -34,18 +34,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} ${pixelifySans.variable} ${pressStart2P.variable} antialiased`}
-      >
-        <ThemeProvider 
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} ${pixelifySans.variable} ${pressStart2P.variable} antialiased`}
         >
+      <ThemeProvider 
+        attribute="class"
+        defaultTheme="system"
+        enableSystem
+        disableTransitionOnChange
+      >
           {children}
-        </ThemeProvider>
-      </body>
+      </ThemeProvider>
+        </body>
     </html>
   );
 }

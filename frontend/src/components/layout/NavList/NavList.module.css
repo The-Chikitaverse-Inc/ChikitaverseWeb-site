@@ -16,11 +16,15 @@
 }
 
 .navlist:hover {
-    background: #b9b9b9;
-    border: #b9b9b9 solid 1px;
     border-radius: 15px;
-
     box-shadow: #000 0 2px 3px 0;
+}
+
+.navlist svg {
+    width: 30px;
+    height: 30px;
+
+    transition: all 0.3s ease;
 }
 
 .navlist h6 {

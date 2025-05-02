@@ -1,7 +1,3 @@
-.page h2 {
-    color: #0A1128;
-}
-
 .page span {
     background: #5562ea;
     border: #5562ea solid 1px;
@@ -14,6 +10,7 @@
     align-items: start;
 
     padding: 16px 20px;
+    margin: 20px 0;
 
     width: 35dvw;
 }
@@ -41,6 +38,7 @@
     font-size: 12pt;
     line-height: 22px;
 
+    color: #dbdee1;
     border-left: #dbdee1 solid 5px;
     border-radius: 3px;
 

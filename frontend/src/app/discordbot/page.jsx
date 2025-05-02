@@ -1,3 +1,4 @@
+import '@/components/css/theme.css'
 import styles from './discordbot.module.css'
 import Image from 'next/image'
 
@@ -11,7 +12,7 @@ export default function DiscorBot() {
         <>
             <Header/>
             <Section >
-                <article className={styles.page}>
+                <article className={` ${styles.page} textcolor `}>
                     <h2>Discord Bot</h2>
 
                         <span>
