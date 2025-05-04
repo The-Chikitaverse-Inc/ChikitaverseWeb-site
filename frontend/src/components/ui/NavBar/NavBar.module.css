@@ -1,9 +1,22 @@
-.menu {
-    min-width: 2.5dvw;
-    width: min-content;
-    height: 0.8dvh;
-    background: #E0ECF0;
-    border-radius: 10px;
 
-    margin: 8px;
+.iten {
+    display: none;
+}
+
+
+@media only screen and (max-width: 850px) {
+    .menu div {
+        width: 30px;
+        height: 0.8dvh;
+        background: #E0ECF0;
+        border-radius: 10px;
+    
+        margin: 8px;
+    }
+
+    .iten {
+        position: absolute;
+        top: 150px;
+        right: 0;
+    }
 }

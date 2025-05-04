@@ -12,7 +12,7 @@ export default function Header() {
         <header className={` ${styles.header} highlightcolors `}> 
           <Link href='/' className={styles.logo}>
           <Image  //* Logo do Chikitaverse
-            src='/logoChikitaverse.png' 
+            src='/logochikitaverse.png' 
             alt="Logo" 
             priority 
             quality={75}
