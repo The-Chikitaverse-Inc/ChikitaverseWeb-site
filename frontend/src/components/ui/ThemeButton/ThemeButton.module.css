@@ -9,3 +9,15 @@
 .themeicon:hover {
    fill: #bcbcbc;
 }
+
+@media only screen and (max-width: 850px) {
+   .themeicon {
+      display: none;
+      
+      width: 50px;
+      height: 50px;
+   
+      margin: 0 30px; 
+      transition: all 0.3s ease;
+   }
+}

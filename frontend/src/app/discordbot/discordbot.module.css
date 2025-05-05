@@ -76,3 +76,85 @@
     text-decoration: none;
     color: #5562ea;
 }
+
+@media only screen and (max-width: 850px) {
+    .page span {
+        background: #5562ea;
+        border: #5562ea solid 1px;
+        border-radius: 15px;
+        color: #eaeaea;
+    
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: start;
+    
+        padding: 16px 20px;
+        margin: 20px 0;
+    
+        width: 90%;
+    }
+    
+    .headerbot {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+    }
+    
+    .botprofile {
+        border-radius: 50%;
+    }
+    
+    /*Todo: Deixar essa pagina responsiva */
+    .page span h3 {
+        font-size: 16pt;
+    }
+    
+    .page span div h4 {
+        font-size: 14pt;
+        margin: 10px 0;
+    }
+    
+    .page span div p {
+        font-size: 12pt;
+        line-height: 22px;
+    
+        color: #dbdee1;
+        border-left: #dbdee1 solid 5px;
+        border-radius: 3px;
+    
+        margin: 20px 0;
+        padding: 0 8px;
+    }
+    
+    .buttonbot {
+        background: #fff;
+        border: #fff solid 1px;
+        border-radius: 12px;
+    
+        padding: 5px 10px;
+        margin: 4px 10px;
+    
+        width: auto;
+        height: 4dvh;
+        
+    
+        color: #5562ea;
+        font-family: 'Pixelify Sans';
+        font-weight: 600;
+        font-size: 14pt;
+    
+        transition: all 0.3s ease;
+    }
+    
+    .buttonbot:hover {
+        box-shadow: #16193b 0 3px 2px 0;
+        font-weight: 800;
+        background: #eaeaea;
+    }
+    
+    .buttonbot a {
+        text-decoration: none;
+        color: #5562ea;
+    }
+}

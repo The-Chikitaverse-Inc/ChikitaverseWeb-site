@@ -31,15 +31,9 @@
     flex-grow: 1;
 }
 
-/*Todo: Ajustar o tamanho  */
-
 @media only screen and (max-width: 850px) {
     .maincont {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    
-        margin: 20px 110px;
+        margin: 20px 30px;
     }
 
     .cotent {
@@ -54,7 +48,5 @@
         display: flex;
         flex-direction: column;
         gap: 5px;
-      
-        flex-grow: 2;
       }
 }

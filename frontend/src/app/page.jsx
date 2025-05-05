@@ -1,14 +1,13 @@
 //! Components
 import Header from "@/components/layout/Header/Header";
 import Section from "@/components/layout/Section/Section";
-import ThemeButton from "@/components/ui/ThemeButton/ThemeButton";
 
 export default function Home() {
   return (
     <>
       <Header/>
       <Section>
-        <article>
+        <article id='homecotent' >
         
         <h2>Bem vindo ao Chikitaverso!</h2>
           <p>Esta buscando um multiverso para se divertir? Veio ao lugar certo!</p>

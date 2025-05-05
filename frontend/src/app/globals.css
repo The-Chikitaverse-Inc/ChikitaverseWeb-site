@@ -34,6 +34,17 @@ body {
     margin: 0;
 }
 
+#homecotent h2 {
+  margin: 20px 0;
+}
+
+#homecotent p {
+  font-size: 10pt;
+  font-weight: normal;
+
+  line-height: 18px;
+}
+
 #linkbuttonchikitaverse a {
     text-decoration: none;
     width: 20dvw;
