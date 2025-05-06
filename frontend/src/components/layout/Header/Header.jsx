@@ -5,7 +5,7 @@ import styles from './Header.module.css'
 
 //! Components
 import ThemeButton from "@/components/ui/ThemeButton/ThemeButton";
-import NavBar from '@/components/ui/NavBar/NavBar';
+import NavBar from '@/components/ui/MenuBar/MenuBar';
 
 export default function Header() {
     return(
