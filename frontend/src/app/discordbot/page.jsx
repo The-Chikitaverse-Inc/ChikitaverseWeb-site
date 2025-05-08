@@ -29,8 +29,8 @@ export default function DiscorBot() {
                                     <a href="https://discord.com/oauth2/authorize?client_id=1159279268627488809" target='_blank'>Adicionar app </a>
                                 </button>
                                 
-                                <BotButton link='/discordbot/termsofservice' >Termos de Serviço</BotButton>
-                                <BotButton link='/discordbot/privacypolicy'>Política de Privacidade</BotButton>
+                                <BotButton link='termsofservice' >Termos de Serviço</BotButton>
+                                <BotButton link='privacypolicy'>Política de Privacidade</BotButton>
                             </div>
 
                         </span>

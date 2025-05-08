@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function BotButton({ children, link }) {
     
-    const vrlink = `${link}`
+    const vrlink = `/discordbot/${link}`
     
     return (
         <button className={styles.botbutton}>

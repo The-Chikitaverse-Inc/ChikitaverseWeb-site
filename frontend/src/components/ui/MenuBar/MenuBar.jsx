@@ -1,27 +1,21 @@
 "use client"
 import styles from './MenuBar.module.css'
 import '../../css/theme.css'
-import Link from 'next/link'
+
+//! Components
+import MenuOption from '../MenuOption/MenuOption'
 
 
 export default function NavBar() {
-    return ( //Todo: Fazer a o componente das opçoes de menu
+    return (
         <nav className={styles.menu}>
             <div className={styles.menubar1}></div>
             <div className={styles.menubar2}></div>
             <div className={styles.menubar3}></div>
 
             <ul className={` ${styles.iten} glcolors `}>
-                <li>
-                    
-                </li>
-                
-                <li>
-                </li>
-                
-                <li>
-                </li>
+                <MenuOption></MenuOption>
             </ul>
         </nav>
-    )
+    )//Todo: Testa o component
 }
