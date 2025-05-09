@@ -1,20 +1,62 @@
-.iten {
+  .navbar_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu_toggle {
+    font-size: 1.5rem;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: block;
+  }
+  
+  .nav_links {
+    position: absolute;
+    top: 90px;
+    right: 0;
+    
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
     display: none;
-}
-
-@media only screen and (max-width: 850px) {
-    .menu div {
-        width: 30px;
-        height: 0.8dvh;
-        background: #E0ECF0;
-        border-radius: 10px;
-        display: block;
-        margin: 8px;
+    flex-direction: column;
+  }
+  
+  .nav_links.active {
+    display: flex;
+  }
+  
+  .nav_links li {
+    margin: 0.5rem 0;
+  }
+  
+  .nav_links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav_links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Desktop */
+  @media (min-width: 768px) {
+    .menu_toggle {
+      display: none;
     }
-
-    .iten {
-        position: absolute;
-        top: 150px;
-        right: 0;
+  
+    .nav_links {
+      display: flex !important;
+      flex-direction: row;
+      gap: 1rem;
+      margin-top: 0;
     }
-}
+  
+    .nav_links li {
+      margin: 0;
+    }
+  }
+  

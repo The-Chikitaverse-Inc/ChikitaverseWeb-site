@@ -1,67 +1,33 @@
-"use client"
+'use client';
+import { useState } from 'react';
 import styles from './MenuBar.module.css'
-import '../../css/theme.css'
-import { useEffect } from 'react'
 
-//! Components
-import MenuOption from '../MenuOption/MenuOption'
+//! Componentes
+import MenuOption from '../MenuOption/MenuOption';
 
-export default function NavBar() {
-   
-  useEffect(() => {
-    class MobileNavbarClass {
-      constructor(mobileMenu, navList, navLinks) {
-        this.mobileMenu = document.querySelector(mobileMenu);
-        this.navList = document.querySelector(navList);
-        this.navLinks = document.querySelectorAll(navLinks);
-        this.activeClass = 'active';
+export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+  const s = styles
 
-        this.handleClick = this.handleClick.bind(this);
-      }
-
-      animateLinks() {
-        this.navLinks.forEach((link, index) => {
-          link.style.animation
-            ? (link.style.animation = '')
-            : (link.style.animation = `navLinkFade 0.5s ease forwards ${
-                index / 7 + 0.3
-              }s`);
-        });
-      }
-
-      handleClick() {
-        this.navList.classList.toggle(this.activeClass);
-        this.mobileMenu.classList.toggle(this.activeClass);
-        this.animateLinks();
-      }
-
-      addClickEvent() {
-        this.mobileMenu.addEventListener('click', this.handleClick);
-      }
-
-      init() {
-        if (this.mobileMenu) {
-          this.addClickEvent();
-        }
-        return this;
-      }
-    }
-
-    const mobileNavbar = new MobileNavbarClass('.menu', '.iten', '.iten li');
-    mobileNavbar.init();
-  }, []);
-    
-    return (
-        <nav className={styles.menu}>
-            <div className={styles.menubar1}></div>
-            <div className={styles.menubar2}></div>
-            <div className={styles.menubar3}></div>
-
-            <ul className={` ${styles.iten} glcolors `}>
-                <MenuOption link='/'>Home</MenuOption>
-                <MenuOption link='/chikitaverse'>Chikitaverso</MenuOption>
-                <MenuOption link='/discordbot'>Discord Bot</MenuOption>
-            </ul>
-        </nav>
-    )
+  return ( //Todo: terminar o sistema de menu mobile
+    <nav>
+      <div className={s.navbar_container}>
+        <button className={s.menu_toggle} onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu"
+        >
+          ☰
+        </button>
+      </div>
+      <ul className={` highlightcolors ${s.nav_links} ${isOpen ? s.active : ''}`}>
+        <MenuOption link='/'>
+          Home
+        </MenuOption>
+          <MenuOption link='/chikitaverse'>
+            Chikitaverse
+          </MenuOption>
+            <MenuOption link='/discordbot'>
+              Discord Bot
+            </MenuOption>
+      </ul>
+    </nav>
+  );
 }
