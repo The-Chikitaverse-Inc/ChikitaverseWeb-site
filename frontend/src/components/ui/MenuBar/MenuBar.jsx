@@ -9,12 +9,14 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const s = styles
 
-  return ( //Todo: terminar o sistema de menu mobile
+  return (
     <nav>
       <div className={s.navbar_container}>
         <button className={s.menu_toggle} onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu"
         >
-          ☰
+          <div className={s.menu}></div>
+          <div className={s.menu}></div>
+          <div className={s.menu}></div>
         </button>
       </div>
       <ul className={` highlightcolors ${s.nav_links} ${isOpen ? s.active : ''}`}>

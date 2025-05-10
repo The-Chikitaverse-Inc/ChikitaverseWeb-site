@@ -1,0 +1,11 @@
+.option {
+    display: none;
+}
+
+/*Todo: Fazer essa budega funcionar */
+
+@media (min-width: 850px) {
+    .option {
+        display: unset;
+    }
+}
