@@ -1,4 +1,3 @@
-import '../../css/theme.css'
 import styles from './Aside.module.css'
 
 //! Coponents

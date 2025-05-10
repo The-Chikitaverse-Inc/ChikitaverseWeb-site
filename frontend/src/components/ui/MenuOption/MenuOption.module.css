@@ -2,10 +2,25 @@
     display: none;
 }
 
-/*Todo: Fazer essa budega funcionar */
+.link svg {
+    width: 30px;
+    height: 30px;
 
-@media (min-width: 850px) {
+    display: inline;
+    margin: 4px;
+}
+
+.link h6 {
+    display: inline;
+    font-size: 8pt;
+
+    margin: 4px;
+}
+
+@media (max-width: 850px) {
     .option {
         display: unset;
+
+        margin: 15px;
     }
 }

@@ -1,5 +1,4 @@
 'use client'
-import '../../css/theme.css'
 import Link from "next/link"
 import styles from './NavList.module.css'
 

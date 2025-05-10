@@ -7,7 +7,7 @@ export default function NotFound() {
             
             <div>
                 <h1>404 - Esse linha do Chikitaverso não existe ainda</h1>
-                <Image src='/chikita.png' width={200} height={200} alt="Chikita Not found" />
+                <img src="/chikita.png" alt="Imagem de uma Chikita" id="notfound-image"/>
             </div>
 
             <span>

@@ -2,6 +2,7 @@
 import Header from "@/components/layout/Header/Header";
 import Section from "@/components/layout/Section/Section";
 
+
 export default function Home() {
   return (
     <>
