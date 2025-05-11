@@ -1,10 +1,9 @@
 //! Components
 import Header from "@/components/layout/Header/Header";
 import Section from "@/components/layout/Section/Section";
-import RobloxCard from "@/components/ui/RobloxCard/RobloxCard";
 
 export default function Home() {
-  return (
+  return ( //Todo: Fazer o bagulho do roblox
     <>
       <Header/>
       <Section>
@@ -18,7 +17,6 @@ export default function Home() {
                 <button >Clique Aqui!</button>
             </a>
         </span>
-          <RobloxCard universeId={2615804028} />
         </article>
       </Section>
     </>
