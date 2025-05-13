@@ -1,9 +1,10 @@
 //! Components
 import Header from "@/components/layout/Header/Header";
 import Section from "@/components/layout/Section/Section";
+import Test from '@/components/Test/Test'
 
 export default function Home() {
-  return ( //Todo: Fazer o bagulho do roblox
+  return (
     <>
       <Header/>
       <Section>
@@ -19,6 +20,7 @@ export default function Home() {
         </span>
         </article>
       </Section>
+      <Test/>
     </>
   );
 }
