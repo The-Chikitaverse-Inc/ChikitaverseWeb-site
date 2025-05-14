@@ -4,11 +4,12 @@ async function getData() {
   } //Todo: Fazer essa com discord xadrez e roblox
   
   export default async function RobloxCard() {
-    const chikita = await getData();
+    const resData = await getData();
+    const chikitaVoice = resData.dadosJogo.data[0]
   
     return (
       <>
-        <p></p>
+        <p>{chikitaVoice.name}</p>
       </>
     );
   }

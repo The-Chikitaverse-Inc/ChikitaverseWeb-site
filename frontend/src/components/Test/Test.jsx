@@ -4,11 +4,12 @@ async function getData() {
   }
   
   export default async function Test() {
-    const chikita = await getData();
-  
+    const resData = await getData();
+    const chikitaVoice = resData.dadosJogo.data[0]
+
     return (
       <>
-        <p></p>
+        <p>{chikitaVoice.name}</p>
       </>
     );
   }
