@@ -1,0 +1,41 @@
+.robloxcard {
+    width: auto;
+    min-height: 5vh;
+    height: auto;
+    display: flex;
+
+    margin: 20px 0;
+    padding: 10px;
+
+    color: #E0E1E3;
+    background: #0074BD;
+    box-sizing: border-box;
+    border: #0074BD solid 1px;
+    border-radius: 10px;
+
+}
+
+.robloxcard div h3 {
+    margin: 10px 0;
+}
+
+.robloxcard div p {
+    border-left: #E0E1E3 solid 8px;
+    border-radius: 5px;
+
+    padding: 8px;
+    margin: 20px;
+}
+
+.robloxcard div span p {
+    background: #003a5f;
+    color: #11e311;
+    border: #003a5f solid 1px;
+    display: inline;
+
+    margin: 8px;
+}
+
+.logochvoice {
+    border-radius: 20px;
+}
