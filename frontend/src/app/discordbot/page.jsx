@@ -6,6 +6,7 @@ import Image from 'next/image'
 import Header from '@/components/layout/Header/Header'
 import Section from '@/components/layout/Section/Section'
 import BotButton from '@/components/ui/BotButton/BotButton'
+import DiscordMobile from '@/components/ui/DiscordMobile/DiscordMobile'
 
 export const metadata = {
     title: 'Discord Bot',
@@ -36,8 +37,8 @@ export default function DiscorBot() {
                                 <BotButton link='termsofservice' >Termos de Serviço</BotButton>
                                 <BotButton link='privacypolicy'>Política de Privacidade</BotButton>
                             </div>
-
                         </span>
+                        <DiscordMobile/>
                 </article>
             </Section>
         </>

@@ -3,6 +3,7 @@
     min-height: 5vh;
     height: auto;
     display: flex;
+    flex-direction: column;
 
     margin: 20px 0;
     padding: 10px;
@@ -19,6 +20,19 @@
     margin: 10px 0;
 }
 
+.status {
+    background: #003a5f;
+    color: #11e311;
+    border: #003a5f solid 1px;
+    border-radius: 15px;
+    display: inline;
+
+    width: 15vw;
+
+    padding: 10px;
+    margin: 10px;
+}
+
 .robloxcard div p {
     border-left: #E0E1E3 solid 8px;
     border-radius: 5px;
@@ -27,11 +41,49 @@
     margin: 20px;
 }
 
-.robloxcard div span p {
-    background: #003a5f;
-    color: #11e311;
-    border: #003a5f solid 1px;
-    display: inline;
 
-    margin: 8px;
+@media only screen and (max-width: 850px) {
+    .robloxcard {
+        width: auto;
+        min-height: 5vh;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+        margin: 20px 0;
+        padding: 10px;
+
+        color: #E0E1E3;
+        background: #0074BD;
+        box-sizing: border-box;
+        border: #0074BD solid 1px;
+        border-radius: 10px;
+
+    } 
+
+    .robloxcard div h3 {
+        margin: 10px 0;
+    }
+
+    .status {
+        background: #003a5f;
+        color: #11e311;
+        border: #003a5f solid 1px;
+        border-radius: 15px;
+        display: block;
+
+        width: auto;
+
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .robloxcard div p {
+        border-left: #E0E1E3 solid 8px;
+        border-radius: 5px;
+        font-size: 8pt;
+
+        padding: 8px;
+        margin: 10px;
+    }
 }

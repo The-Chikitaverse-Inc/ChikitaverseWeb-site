@@ -11,11 +11,11 @@ export default async function RobloxCard() {
           <div>
             <h3>Game Roblox: {chikitaVoice.name}</h3>
               <p>{chikitaVoice.description}</p>
-            <span>
-              <p>Pessoa Ativas: {compactNotation(chikitaVoice.playing)}</p>
-              <p>Visitas: {compactNotation(chikitaVoice.visits)}</p>
-            </span>
           </div>
+          <span>
+              <p className={styles.status}>Pessoa Ativas: {compactNotation(chikitaVoice.playing)}</p>
+              <p className={styles.status}>Visitas: {compactNotation(chikitaVoice.visits)}</p>
+          </span>
       </section>
     );
   }
