@@ -3,7 +3,7 @@ import "./globals.css";
 import '@/components/css/theme.css'
 
 //! Components
-import { ThemeProvider } from "next-themes";
+import { Theme } from "@/components/layout/Theme/Theme";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,24 +27,23 @@ const pressStart2P = Press_Start_2P({
 });
 
 export const metadata = {
-  title: "Chikitaverse",
-  description: "Chikitaverso, o Multiverso dos Chikitas!",
-};
+  title: {
+    default: 'Chikitaverse - Home',
+    template: 'Chikitaverse - %s',
+  },
+  description: 'Entre no Chikitaverso poder explora as teias cosmicas de Todo o multiverso de Chikita',
+}
+
 
 export default function RootLayout({ children }) {
   return (
-    <html>
+    <html lang="pt-br" suppressHydrationWarning>
         <body
           className={`${geistSans.variable} ${geistMono.variable} ${pixelifySans.variable} ${pressStart2P.variable} antialiased`}
         >
-          <ThemeProvider 
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
+          <Theme>
             {children}
-          </ThemeProvider>
+          </Theme>
         </body>
     </html>
   );

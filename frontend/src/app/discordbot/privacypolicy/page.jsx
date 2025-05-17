@@ -5,6 +5,10 @@ import styles from './privacypolicy.module.css'
 import Header from '@/components/layout/Header/Header'
 import Section from '@/components/layout/Section/Section'
 
+export const metadata = {
+    title: 'Discord Bot',
+  }
+
 export default function PrivacyPolicy() {
     return(
         <>
@@ -24,7 +28,6 @@ export default function PrivacyPolicy() {
                                         <li>ID do servidor (guild)</li>
                                         <li>ID do usuário e nome de usuário (username)</li>
                                         <li>Mensagens enviadas que ativam o bot (message content)</li>
-                                        <li>Comandos usados</li>
                                     </ul>
                                     
                                     <p>Essas informações são <strong>temporárias</strong>, utilizadas apenas no momento da interação, e <strong>não são salvas</strong> em banco de dados.</p>
@@ -51,10 +54,6 @@ export default function PrivacyPolicy() {
                                     <li><strong>Contato:</strong> <a className={styles.lawslink} href="mailto:chikitaverso.contato@gmail.com" target="_blank">The Chikitaverse Inc.</a></li>
                                     <li><strong>Código aberto:</strong> <a className={styles.lawslink} href="https://github.com/The-Chikitaverse-Inc/ChikitaBot" target="_blank">GitHub - ChikitaBot</a></li>
                                 </ul>
-
-                        <h4>Mudanças nesta Política</h4>
-                            <p>Se algo mudar, essa página será atualizada com a nova versão. Você pode sempre ver a última versão aqui ou via comando do bot (em breve).</p>
-
                     </span>
                 </article>
             </Section>

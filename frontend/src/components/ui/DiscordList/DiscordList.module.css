@@ -1,0 +1,72 @@
+.dclist {
+    min-width: 12vw;
+    min-height: 8vh;
+    width: auto;
+    height: auto;
+
+    display: flex;
+    gap: 8px;
+
+    color: #E0ECF0;
+    background: #5562ea;
+    border: #5562ea solid 1px;
+    border-radius: 15px;
+
+    margin: 8px 10px;
+    padding: 8px;
+}
+
+.dclist span {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 3px;
+}
+
+.dclist svg {
+    width: 30px;
+    height: 30px;
+    fill: #E0ECF0;
+}
+
+.dclist span h6 {
+    margin: 0;
+
+    font-size: 10pt;
+}
+
+.dclist span p {
+    font-size: 8pt;
+    color: #11e311;
+    display: inline;
+}
+
+.dclist span a {
+    text-decoration: none;
+    color: #5562ea;
+}
+
+.dclist span button {
+    background: #fff;
+    border: #fff solid 1px;
+    border-radius: 12px;
+
+    padding: 5px 10px;
+    margin: 4px 10px;
+
+    width: 5vw;
+    height: auto;
+
+    color: #5562ea;
+    font-family: 'Pixelify Sans';
+    font-weight: 600;
+    font-size: 10pt;
+
+    transition: all 0.3s ease;
+}
+
+.dclist span button:hover {
+    box-shadow: #16193b 0 3px 2px 0;
+    font-weight: 800;
+    background: #eaeaea;
+}

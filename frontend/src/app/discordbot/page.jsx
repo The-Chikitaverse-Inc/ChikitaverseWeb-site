@@ -7,6 +7,10 @@ import Header from '@/components/layout/Header/Header'
 import Section from '@/components/layout/Section/Section'
 import BotButton from '@/components/ui/BotButton/BotButton'
 
+export const metadata = {
+    title: 'Discord Bot',
+  }
+
 export default function DiscorBot() {
     return(
         <>

@@ -4,7 +4,7 @@ import Section from "@/components/layout/Section/Section";
 import RobloxCard from "@/components/ui/RobloxCard/RobloxCard";
 
 export default function Home() {
-  return (//Todo: Fazer os cards do chikitaverso que cosome API
+  return (
     <>
       <Header/>
       <Section>

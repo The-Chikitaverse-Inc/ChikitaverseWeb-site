@@ -4,6 +4,7 @@
     height: auto;
 
     line-height: 20px;
+    font-family: 'Courier New', Courier, monospace;
 
     padding: 10px;
 }
@@ -15,6 +16,16 @@
 
 .privacylaws span h3 {
     font-weight: 900;
+    font-size: 16pt;
+
+    margin: 10px 0;
+}
+
+.privacylaws span h4 {
+    font-weight: 700;
+    font-size: 14pt;
+
+    margin: 10px 0;
 }
 
 .privacylaws span p, .privacylaws span ul li {

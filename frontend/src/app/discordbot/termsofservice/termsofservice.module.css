@@ -4,6 +4,7 @@
     height: auto;
 
     line-height: 25px;
+    font-family: 'Courier New', Courier, monospace;
 
     padding: 10px;
 }
@@ -15,6 +16,16 @@
 
 .lawsservice span h3 {
     font-weight: 900;
+    font-size: 16pt;
+
+    margin: 10px 0;
+}
+
+.lawsservice span h4 {
+    font-weight: 900;
+    font-size: 12pt;
+
+    margin: 10px 0;
 }
 
 .lawsservice span p, .lawsservice span ul li {
