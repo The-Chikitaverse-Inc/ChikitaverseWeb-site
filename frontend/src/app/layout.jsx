@@ -5,6 +5,7 @@ import '@/components/css/theme.css'
 //! Components
 import { Theme } from "@/components/layout/Theme/Theme";
 import Head from "next/head";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -49,7 +50,12 @@ export default function RootLayout({ children }) {
               <meta name="twitter:description" content="Entre no Chikitaverso poder explora as teias cosmicas de Todo o multiverso de Chikita" />
                 <meta name="twitter:image" content="/logochikitaverse.png" />
 
-          <meta name="google-adsense-account" content="ca-pub-3875697428527351"></meta>
+         <Script
+          id="adsense-script"
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3875697428527351"
+          crossOrigin="anonymous"
+        />
         </Head>
         <body
           className={`${geistSans.variable} ${geistMono.variable} ${pixelifySans.variable} ${pressStart2P.variable} antialiased`}
