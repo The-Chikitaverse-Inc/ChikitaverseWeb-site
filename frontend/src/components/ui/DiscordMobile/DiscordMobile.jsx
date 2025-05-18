@@ -3,7 +3,7 @@ import compactNotation from "@/service/compactNotation"
 import styles from './DiscordMobile.module.css'
 
 export default async function DiscordMobile() {
-    const data = await getData('http://localhost:1995/discord')
+    const data = await getData('https://chikitaverse-api.onrender.com/discord')
     const serveChikitaverse = data.serveData
 
     return (
