@@ -40,7 +40,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br" suppressHydrationWarning>
-        <Head>
+        <head>
           <meta property="og:title" content="Chikitaverse" />
             <meta property="og:image" content="/logochikitaverse.png" />
               <meta property="og:type" content="website" />
@@ -56,7 +56,7 @@ export default function RootLayout({ children }) {
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3875697428527351"
           crossOrigin="anonymous"
         />
-        </Head>
+        </head>
         <body
           className={`${geistSans.variable} ${geistMono.variable} ${pixelifySans.variable} ${pressStart2P.variable} antialiased`}
         >
