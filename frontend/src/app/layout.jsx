@@ -4,6 +4,7 @@ import '@/components/css/theme.css'
 
 //! Components
 import { Theme } from "@/components/layout/Theme/Theme";
+import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,6 +39,19 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br" suppressHydrationWarning>
+        <Head>
+          <meta property="og:title" content="Chikitaverse" />
+            <meta property="og:image" content="/logochikitaverse.png" />
+              <meta property="og:type" content="website" />
+
+          <meta name="twitter:card" content="logochikitaverse" />
+            <meta name="twitter:title" content="Chikitaverse" />
+              <meta name="twitter:description" content="Entre no Chikitaverso poder explora as teias cosmicas de Todo o multiverso de Chikita" />
+                <meta name="twitter:image" content="/logochikitaverse.png" />
+
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3875697428527351" crossorigin="anonymous"></script>
+          
+        </Head>
         <body
           className={`${geistSans.variable} ${geistMono.variable} ${pixelifySans.variable} ${pressStart2P.variable} antialiased`}
         >
