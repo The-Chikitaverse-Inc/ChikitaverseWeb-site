@@ -1,7 +1,3 @@
-Claro! Com base nas informações disponíveis no repositório [ChikitaverseWeb-site](https://github.com/The-Chikitaverse-Inc/ChikitaverseWeb-site), aqui está uma sugestão de README.md aprimorado para o projeto:
-
----
-
 # 🌐 ChikitaverseWeb-site
 
 Repositório oficial do site do projeto **O Chikitaverso** — uma iniciativa criativa e colaborativa que une humor, tecnologia e cultura digital.([GitHub][1])
