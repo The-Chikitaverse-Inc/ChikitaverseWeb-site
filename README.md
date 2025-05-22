@@ -1,6 +1,6 @@
 # 🌐 ChikitaverseWeb-site
 
-Repositório oficial do site do projeto **O Chikitaverso** — uma iniciativa criativa e colaborativa que une humor, tecnologia e cultura digital.([GitHub][1])
+Repositório oficial do site do projeto **O Chikitaverso** — uma iniciativa criativa e colaborativa que une humor, tecnologia e cultura digital.
 
 🔗 Acesse: [chikitaverse.com](https://chikitaverse.com)
 
@@ -15,7 +15,7 @@ Este repositório contém o código-fonte do site oficial do Chikitaverso, desen
 ## 🛠️ Tecnologias Utilizadas
 
 * **JavaScript** – 67.2%
-* **CSS** – 32.8%([GitHub][1])
+* **CSS** – 32.8%
 
 O projeto é estruturado na pasta `frontend`, onde estão localizados os arquivos principais do site.
 
@@ -23,13 +23,13 @@ O projeto é estruturado na pasta `frontend`, onde estão localizados os arquivo
 
 ## 🚀 Como Contribuir
 
-Contribuições são bem-vindas! Se você deseja sugerir melhorias, reportar bugs ou adicionar novas funcionalidades, siga os passos abaixo:([GitHub][2])
+Contribuições são bem-vindas! Se você deseja sugerir melhorias, reportar bugs ou adicionar novas funcionalidades, siga os passos abaixo:
 
 1. Faça um fork deste repositório.
 2. Crie uma nova branch: `git checkout -b sua-feature`
 3. Realize suas alterações e commit: `git commit -m 'Adiciona nova feature'`
 4. Envie para o seu fork: `git push origin sua-feature`
-5. Abra um Pull Request explicando suas modificações.([GitHub Pages][3])
+5. Abra um Pull Request explicando suas modificações.
 
 ---
 
