@@ -2,7 +2,7 @@ import getData from "@/service/getData";
 import styles from './DiscordList.module.css'
 
 export default async function DiscordList() {
-    const data = await getData('https://chikitaverse-api.onrender.com/discord')
+    const data = await getData('https://api.chikitaverse.com/discord')
     const serveChikitaverse = data.serveData
 
     return (
