@@ -7,7 +7,7 @@
   gap: 10px;
 
   padding: 8px;
-  margin: 12px 110px;
+  margin: 12px 2.5%;
   
   position: sticky;
   top: 0;
@@ -19,7 +19,6 @@
     font-family: 'Press Start 2P', sans-serif;
     font-size: 30pt;
     font-weight: 800;
-    text-shadow: #000 3px 2px;
 
     display: inline;
     flex-grow: 2;

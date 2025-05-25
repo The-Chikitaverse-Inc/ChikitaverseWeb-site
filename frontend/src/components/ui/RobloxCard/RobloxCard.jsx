@@ -4,17 +4,17 @@ import compactNotation from '@/service/compactNotation'
 
 export default async function RobloxCard() {
     const resData = await getData('https://api.chikitaverse.com/roblox');
-    const chikitaVoice = resData.gameData.data[0]
+    const chikitaVoice = resData.gameData?.data[0]
 
-    return (
+     return (
       <section className={styles.robloxcard}>
           <div>
-            <h3>Game Roblox: {chikitaVoice.name}</h3>
-              <p>{chikitaVoice.description}</p>
+            <h3>Game Roblox: {chikitaVoice ? chikitaVoice.name : 'Carregando..'}</h3>
+              <img src="/logoChikitavoice.png" alt="Logo Chikita Voice" />
           </div>
           <span>
-              <p className={styles.status}>Pessoa Ativas: {compactNotation(chikitaVoice.playing)}</p>
-              <p className={styles.status}>Visitas: {compactNotation(chikitaVoice.visits)}</p>
+              <p className={styles.status}>Pessoa Ativas: {compactNotation(chikitaVoice ? chikitaVoice.playing : 'None')}</p>
+              <p className={styles.status}>Visitas: {compactNotation(chikitaVoice ? chikitaVoice.visits : 'None')}</p>
           </span>
       </section>
     );
