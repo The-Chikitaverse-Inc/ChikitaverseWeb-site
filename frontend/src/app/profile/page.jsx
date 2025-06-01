@@ -1,21 +1,17 @@
-'use client'
-import { useAuth } from "@/lib/firebase/useAuth"
 import styles from './profile.module.css'
 
 //* Componentes
 import Section from "@/components/layout/Section/Section"
+import ProfilePic from '@/components/layout/Profile/ProfilePic/ProfilePic'
+import ProfileName from '@/components/layout/Profile/ProfileName/ProfileName'
 
 export default function Profile() {
-    const { user, loading} = useAuth()
-    
     return (
         <>
             <Section>
                 <article className={styles.profile}>
-                    <img 
-              src={user?.photoURL || "/chikita.jpeg"}
-              alt="Avatar"/>
-              <h2></h2>
+                    <ProfilePic/>
+                    <ProfileName/>
                 </article>
             </Section>
         </>

@@ -4,7 +4,7 @@ import { useAuth } from "@/lib/firebase/useAuth";
 import styles from './LoginNav.module.css'
 
 //! Componments
-import ProfilePic from "../ProfilePic";
+import ProfilePic from "../Profile/ProfilePic/ProfilePic";
 
 export default function LoginNav() {
   const { user, loading } = useAuth()
