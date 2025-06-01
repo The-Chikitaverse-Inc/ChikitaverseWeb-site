@@ -22,6 +22,8 @@
     color: #E0E1E3;
     border-radius: 10px;
     height: 40px;
+
+    padding: 10px;
 }
 
 .login form input::placeholder {
@@ -50,7 +52,7 @@
     justify-content: center;
     border-radius: 12px;
 
-    margin: 16px auto;
+    margin: 18px auto;
     padding: 10px;
 
     font-size: 8pt;
@@ -73,4 +75,28 @@
 
 .login p a {
     color: #3897E5;
+}
+
+@media only screen and (max-width: 850px) {
+    .login {
+    margin: 10vh 8dvw;
+    padding: 20px;
+
+    border-radius: 15px;
+    }
+
+    .login h3 {
+    margin: 10px;
+    text-align: center;
+    font-size: 14pt;
+    }
+
+    .login form input {
+        color: #E0E1E3;
+        border-radius: 10px;
+        height: 40px;
+        width: 96%;
+
+        padding: 10px;
+    }
 }

@@ -3,9 +3,6 @@ import Link from "next/link";
 import { useAuth } from "@/lib/firebase/useAuth";
 import styles from './LoginNav.module.css'
 
-//! Componments
-import ProfilePic from "../Profile/ProfilePic/ProfilePic";
-
 export default function LoginNav() {
   const { user, loading } = useAuth()
 
@@ -16,7 +13,10 @@ export default function LoginNav() {
         {!user ? (
             <Link href='/registrer'>Entrar</Link>
         ) : (
-            <ProfilePic />
+            <img 
+              src={user.photoURL || "/chikita.jpeg"}
+              alt="Avatar"
+            />
         )}
     </nav>
   );

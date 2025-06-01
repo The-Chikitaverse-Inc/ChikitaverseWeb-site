@@ -1,6 +1,14 @@
+.profile section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 .profile img {
     width: 100px;
     height: 100px;
+    display: inline;
 
     border-radius: 45%;
 }
+

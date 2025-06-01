@@ -1,0 +1,22 @@
+.button {
+    display: block;
+    margin: 20px 0;
+}
+
+.open {
+    padding: 8px;
+    box-sizing: border-box;
+
+    background: #3897E5;
+    border-radius: 15px;
+    color: #E6E6E6;
+}
+
+.exit {
+    padding: 8px;
+    box-sizing: border-box;
+
+    background: #eb2b3b;
+    border-radius: 15px;
+    color: #E6E6E6;
+}

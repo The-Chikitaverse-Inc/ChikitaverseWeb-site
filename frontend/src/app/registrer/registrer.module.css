@@ -90,4 +90,13 @@
     text-align: center;
     font-size: 14pt;
     }
+
+    .login form input {
+        color: #E0E1E3;
+        border-radius: 10px;
+        height: 40px;
+        width: 96%;
+
+        padding: 10px;
+    }
 }

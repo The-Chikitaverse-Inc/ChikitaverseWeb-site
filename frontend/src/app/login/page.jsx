@@ -3,7 +3,7 @@ import { userLogin } from "@/lib/firebase/login";
 import styles from './login.module.css'
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { signInWithPopup } from "firebase/auth";
+import { signInWithPopup, signInWithRedirect } from "firebase/auth";
 import { auth, googleProvider } from "@/lib/firebase/config";
 
 //* Components
@@ -31,10 +31,15 @@ export default function loginUser() {
   //* Login com Google
   const loginComGoogle = async () => {
     try {
-      const result = await signInWithPopup(auth, googleProvider);
-      const user = result.user;
-      router.push('/')
-      console.log("Logado com Google como:", user.displayName, user.email);
+      if (typeof window !== "undefined" && window.innerWidth < 768) {
+        //* Mobile
+          console.log("Logado com Google como:", user.displayName, user.email);
+          return await signInWithRedirect(auth, googleProvider)
+      } else {
+        //* Desktop
+          console.log("Logado com Google como:", user.displayName, user.email);
+          return await signInWithPopup(auth, googleProvider);
+      }
     } catch (error) {
       console.error("Erro no login com Google:", error.message);
     }
