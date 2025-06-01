@@ -3,7 +3,7 @@ import styles from './Aside.module.css'
 //! Coponents
 import NavList from '../NavList/NavList'
 import LinkSocial from '@/components/ui/LinkSocial/LinkSocial'
-import DiscordList from '@/components/ui/DiscordList/DiscordList'
+import DiscordList from '@/components/ui/Discord/DiscordList/DiscordList'
 
 export default function Aside() {
     return(

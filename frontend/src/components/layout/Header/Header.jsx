@@ -4,7 +4,7 @@ import styles from './Header.module.css'
 
 //! Components
 import ThemeButton from "@/components/ui/ThemeButton/ThemeButton";
-import NavBar from '@/components/ui/MenuBar/MenuBar';
+import NavBar from '@/components/ui/Menu/MenuBar/MenuBar';
 import LoginNav from "../LoginNav/LoginNav";
 
 export default function Header() {

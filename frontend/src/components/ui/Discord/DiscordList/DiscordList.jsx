@@ -3,7 +3,7 @@ import styles from './DiscordList.module.css'
 import compactNotation from "@/service/compactNotation";
 
 export default async function DiscordList() {
-    const data = await getData('https://api.chikitaverse.com/discord')
+    const data = await getData('discord')
     const serveChikitaverse = data.serveData
     
     return (

@@ -4,8 +4,8 @@ import '@/components/css/theme.css'
 
 //! Components
 import { Theme } from "@/components/layout/Theme/Theme";
-import Head from "next/head";
 import Script from "next/script";
+import Header from "@/components/layout/Header/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -61,6 +61,7 @@ export default function RootLayout({ children }) {
           className={`${geistSans.variable} ${geistMono.variable} ${pixelifySans.variable} ${pressStart2P.variable} antialiased`}
         >
           <Theme>
+            <Header/>
             {children}
           </Theme>
         </body>

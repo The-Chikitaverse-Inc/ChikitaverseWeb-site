@@ -3,7 +3,7 @@ import getData from '@/service/getData';
 import compactNotation from '@/service/compactNotation'
 
 export default async function RobloxCard() {
-    const resData = await getData('https://api.chikitaverse.com/roblox');
+    const resData = await getData('roblox');
     const chikitaVoice = resData.gameData?.data[0]
 
      return (
