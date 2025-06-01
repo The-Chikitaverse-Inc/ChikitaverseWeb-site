@@ -5,6 +5,7 @@ import styles from './Header.module.css'
 //! Components
 import ThemeButton from "@/components/ui/ThemeButton/ThemeButton";
 import NavBar from '@/components/ui/MenuBar/MenuBar';
+import LoginNav from "../LoginNav/LoginNav";
 
 export default function Header() {
     return(
@@ -22,7 +23,7 @@ export default function Header() {
           </Link>
 
           <h1>The Chikitaverse Inc.</h1>
-
+            <LoginNav/>
             <NavBar/>
             <ThemeButton className={styles.theme} />
         </header>

@@ -5,7 +5,7 @@ export default async function getData(api) {
       { 
         cache: 'no-store',
         headers: {
-          "key": process.env.KEYACCES
+          "key": `${process.env.KEYACCES}`
         }
      });
     return res.json();

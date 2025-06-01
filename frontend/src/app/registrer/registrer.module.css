@@ -1,0 +1,93 @@
+.login {
+    margin: 18vh 30vw;
+    padding: 20px;
+
+    border-radius: 15px;
+}
+
+.login h3 {
+    margin: 10px;
+    text-align: center;
+    font-size: 18pt;
+}
+
+.login form {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login form input {
+    color: #E0E1E3;
+    border-radius: 10px;
+    height: 40px;
+
+    padding: 10px;
+}
+
+.login form input::placeholder {
+    color: #E0E1E3;
+    padding: 10px;
+}
+
+.login form button {
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 10pt;
+    color: #E0E1E3;
+
+    transition: all 0.3s ease-in;
+}
+
+.login form button:hover {
+    box-shadow: #000 2px 3px;
+    opacity: 0.8;
+}
+
+.login_google {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+
+    margin: 18px auto;
+    padding: 10px;
+
+    font-size: 8pt;
+    transition: all 0.3s ease-in;
+}
+
+.login_google svg{
+    display: inline;
+
+    width: 20px;
+    height: 20px;
+
+}
+
+.login p {
+    font-size: 8pt;
+    text-align: center;
+    margin: 16px;
+}
+
+.login p a {
+    color: #3897E5;
+}
+
+@media only screen and (max-width: 850px) {
+    .login {
+    margin: 10vh 8dvw;
+    padding: 20px;
+
+    border-radius: 15px;
+    }
+
+    .login h3 {
+    margin: 10px;
+    text-align: center;
+    font-size: 14pt;
+    }
+}
