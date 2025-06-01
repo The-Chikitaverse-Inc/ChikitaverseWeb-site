@@ -2,7 +2,6 @@
 import styles from './chikitaverse.module.css'
 
 //! Components
-import Header from "@/components/layout/Header/Header"
 import Section from "@/components/layout/Section/Section"
 import CardChikitaverse from "@/components/ui/CardChikitaverse/CardChikitaverse"
 import RobloxCard from '@/components/ui/RobloxCard/RobloxCard'
@@ -14,7 +13,6 @@ export const metadata = {
 export default function Chikitaverse() {
     return (
         <>
-            <Header/>
             <Section>
                 <article className={styles.chikitaverse}>
                     <h2>Chikitaverse</h2>

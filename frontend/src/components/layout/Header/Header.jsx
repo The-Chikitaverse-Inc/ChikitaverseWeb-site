@@ -22,7 +22,7 @@ export default function Header() {
             />
           </Link>
 
-          <h1>The Chikitaverse Inc.</h1>
+          <h1>Chikitaverse Inc.</h1>
             <LoginNav/>
             <NavBar/>
             <ThemeButton className={styles.theme} />

@@ -4,3 +4,9 @@
 
     border-radius: 45%;
 }
+
+@media only screen and (max-width: 850px) {
+    .buttonlog {
+        display: none;
+    }
+}
