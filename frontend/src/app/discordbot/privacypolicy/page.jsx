@@ -2,7 +2,6 @@ import '@/components/css/theme.css'
 import styles from './privacypolicy.module.css'
 
 //! Coponents
-import Header from '@/components/layout/Header/Header'
 import Section from '@/components/layout/Section/Section'
 
 export const metadata = {
@@ -12,7 +11,6 @@ export const metadata = {
 export default function PrivacyPolicy() {
     return(
         <>
-            <Header />
             <Section>
                 <article className={styles.privacylaws}>
                     <h2>Discord Bot: Política de Privacidade</h2>

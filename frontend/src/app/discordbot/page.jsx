@@ -3,7 +3,6 @@ import styles from './discordbot.module.css'
 import Image from 'next/image'
 
 //! Components 
-import Header from '@/components/layout/Header/Header'
 import Section from '@/components/layout/Section/Section'
 import BotButton from '@/components/ui/Discord/BotButton/BotButton'
 import DiscordMobile from '@/components/ui/Discord/DiscordMobile/DiscordMobile'
@@ -15,7 +14,6 @@ export const metadata = {
 export default function DiscorBot() {
     return(
         <>
-            <Header/>
             <Section >
                 <article className={` ${styles.page} textcolor `}>
                     <h2>Discord Bot</h2>

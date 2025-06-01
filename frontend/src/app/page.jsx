@@ -1,12 +1,10 @@
 //! Components
-import Header from "@/components/layout/Header/Header";
 import Section from "@/components/layout/Section/Section";
 import RobloxCard from "@/components/ui/RobloxCard/RobloxCard";
 
 export default function Home() {
   return (
     <>
-      <Header/>
       <Section>
         <article id='homecotent' >
         <h2>Bem vindo ao Chikitaverso!</h2>

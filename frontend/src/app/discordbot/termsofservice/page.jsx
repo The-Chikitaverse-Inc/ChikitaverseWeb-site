@@ -2,7 +2,6 @@ import '@/components/css/theme.css'
 import styles from './termsofservice.module.css'
 
 //! Coponents
-import Header from '@/components/layout/Header/Header'
 import Section from '@/components/layout/Section/Section'
 
 export const metadata = {
@@ -12,7 +11,6 @@ export const metadata = {
 export default function TermsOfService() {
     return (
         <>
-            <Header/>
             <Section>
                 <article className={`${styles.lawsservice} textcolor`}>
                     <h2>Discord Bot: Termos de Serviço</h2>

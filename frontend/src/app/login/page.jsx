@@ -7,7 +7,6 @@ import { signInWithPopup } from "firebase/auth";
 import { auth, googleProvider } from "@/lib/firebase/config";
 
 //* Components
-import Header from "@/components/layout/Header/Header";
 import AuthReturnLog from "@/components/layout/AuthReturnLog/AuthReturnLog";
 
 export default function loginUser() {
@@ -44,7 +43,6 @@ export default function loginUser() {
 return (
     <main>
       <AuthReturnLog>
-      <Header/>
       <section className={`${styles.login} glcolors`}>
       <h3>Logar Usuario</h3>
         <form onSubmit={handleSubmit}>

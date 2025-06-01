@@ -7,7 +7,6 @@ import { userAuth } from "@/lib/firebase/auth";
 import styles from './registrer.module.css'
 
 //* Componentes
-import Header from "@/components/layout/Header/Header";
 import AuthReturnLog from "@/components/layout/AuthReturnLog/AuthReturnLog";
 
 export default function registrerUser() {
@@ -44,7 +43,6 @@ export default function registrerUser() {
 return (
     <main>
       <AuthReturnLog>
-      <Header/>
       <section className={`${styles.login} glcolors`}>
       <h3>Cadastrar Usuario</h3>
         <form onSubmit={handleSubmit}>
