@@ -2,7 +2,6 @@
 import { exitUser } from "@/lib/firebase/auth";
 import { useAuth } from "@/lib/firebase/useAuth";
 import styles from './LogButton.module.css'
-import { use } from "react";
 import Link from "next/link";
 
 export function LogButton() {

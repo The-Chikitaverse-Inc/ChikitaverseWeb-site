@@ -12,3 +12,15 @@
     border-radius: 45%;
 }
 
+@media only screen and (max-width: 850px) {
+    .profile section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .profile section h2 {
+        font-size: 11.5pt;
+    }    
+}
