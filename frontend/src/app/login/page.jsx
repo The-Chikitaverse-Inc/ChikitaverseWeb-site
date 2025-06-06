@@ -29,20 +29,14 @@ export default function loginUser() {
 
   //* Login com Google
   const loginComGoogle = async () => {
-    try {
-      if (typeof window !== "undefined" && window.innerWidth < 768) {
-        //* Mobile
+      try {
+          const result = await signInWithPopup(auth, googleProvider);
+          const user = result.user;
           console.log("Logado com Google como:", user.displayName, user.email);
-          return await signInWithRedirect(auth, googleProvider)
-      } else {
-        //* Desktop
-          console.log("Logado com Google como:", user.displayName, user.email);
-          return await signInWithPopup(auth, googleProvider);
+      } catch (error) {
+        console.error("Erro no login com Google:", error.message);
       }
-    } catch (error) {
-      console.error("Erro no login com Google:", error.message);
-    }
-  };
+    };
 
 return (
     <main>
