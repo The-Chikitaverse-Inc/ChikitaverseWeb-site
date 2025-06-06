@@ -45,6 +45,11 @@
     opacity: 0.8;
 }
 
+.login form p {
+    color: #ea2b2b;
+    margin: 0;
+}
+
 .login_google {
     display: flex;
     gap: 8px;

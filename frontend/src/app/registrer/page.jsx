@@ -1,6 +1,5 @@
 'use client'
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 import { signInWithPopup } from "firebase/auth";
 import { auth, googleProvider } from "@/lib/firebase/config";
 import { userAuth } from "@/lib/firebase/auth";
@@ -10,21 +9,22 @@ import styles from './registrer.module.css'
 import AuthReturnLog from "@/components/layout/AuthReturnLog/AuthReturnLog";
 
 export default function registrerUser() {
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [ erroRegistrer, setError ] = useState('')
+  
 
   //* Cadastro com Email e senha
-  const router = useRouter()
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    const { user, error} = await userAuth(email, password)
+    const { user, err} = await userAuth(email, password)
 
     if (user) {
-      router.push('/')
       console.log('Usuario cadastrato com sucesso')
     } else {
-      console.error(`Erro ao Cadastrar: ${error}`)
+      console.error(`Erro ao Cadastrar: ${err}`)
+      setError(err)
     }
   }
 
@@ -33,7 +33,6 @@ export default function registrerUser() {
       try {
           const result = await signInWithPopup(auth, googleProvider);
           const user = result.user;
-          router.push('/')
           console.log("Logado com Google como:", user.displayName, user.email);
       } catch (error) {
         console.error("Erro no login com Google:", error.message);
@@ -53,7 +52,7 @@ return (
               onChange={(e) => setEmail(e.target.value)}
               required
               className="highlightcolors"
-            />
+              />
             <input 
               type="password"
               placeholder="Senha"
@@ -61,8 +60,9 @@ return (
               onChange={(e) => setPassword(e.target.value)}
               required
               className="highlightcolors"
-            />
+              />
             <button type="submit" className="highlightcolors">Cadastrar</button>
+            <p>{erroRegistrer}</p>
         </form>
           <p>Ja tem uma conta? <a href="/login">Entre!</a></p>
         <button onClick={loginComGoogle} className={`${styles.login_google} navhover`}>

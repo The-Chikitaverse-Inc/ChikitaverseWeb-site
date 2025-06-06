@@ -2,7 +2,6 @@
 import { userLogin } from "@/lib/firebase/login";
 import styles from './login.module.css'
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 import { signInWithPopup, signInWithRedirect } from "firebase/auth";
 import { auth, googleProvider } from "@/lib/firebase/config";
 
@@ -12,19 +11,19 @@ import AuthReturnLog from "@/components/layout/AuthReturnLog/AuthReturnLog";
 export default function loginUser() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
+  const [errorLogin, setError] = useState('')
 
   //* Cadastro com Email e senha
-  const router = useRouter()
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    const { user, error} = await userLogin(email, password)
+    const { user, err} = await userLogin(email, password)
 
     if (user) {
-      router.push('/')
       console.log('Usuario logado com sucesso com sucesso')
     } else {
-      console.error(`Erro ao Logar: ${error}`)
+      console.error(`Erro ao Logar: ${err}`)
+      setError(err)
     }
   }
 
@@ -68,6 +67,7 @@ return (
               className="highlightcolors"
               />
             <button type="submit" className="highlightcolors">Entrar</button>
+            <p>{errorLogin}</p>
         </form>
           <p>Não tem uma conta? <a href="/registrer">Crie Uma!</a></p>
         <button onClick={loginComGoogle} className={`${styles.login_google} navhover`}>

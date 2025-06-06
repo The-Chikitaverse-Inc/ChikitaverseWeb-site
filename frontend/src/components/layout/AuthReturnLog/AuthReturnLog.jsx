@@ -9,7 +9,7 @@ export default function AuthReturnLog({ children }) {
 
   useEffect(() => {
     if (!loading && user) {
-      router.push("/profile");
+      router.push("/");
     }
   }, [user, loading, router]);
 
