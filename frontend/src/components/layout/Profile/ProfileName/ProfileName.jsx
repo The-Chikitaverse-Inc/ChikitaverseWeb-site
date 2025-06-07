@@ -6,6 +6,6 @@ export default function ProfileName() {
     const { user } = useAuth()
 
     return (
-        <h2 className={styles.name}>{user?.displayName ?? 'None - Sem conta'}</h2>
+        <h2 className={styles.name} >{user?.displayName ?? 'None - Sem conta'}</h2>
     )
 }
