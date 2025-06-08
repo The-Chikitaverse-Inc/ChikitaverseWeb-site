@@ -45,6 +45,11 @@
     border: var(--highlightcolors) solid 1px;
 }
 
+.colornav {
+    background: var(--navlist-hover);
+    border: var(--navlist-hover) solid 1px;
+}
+
 .navhover:hover {
   background: var(--navlist-hover);
   border: var(--navlist-hover) solid 1px;

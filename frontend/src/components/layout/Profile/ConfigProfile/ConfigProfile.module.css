@@ -1,0 +1,136 @@
+.config {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 0 10px;
+}
+
+.config span {
+    margin: 20px 0;
+}
+
+.config span button {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    padding: 8px;
+    border-radius: 12px;
+}
+
+.config span button svg{
+    display: inline;
+}
+
+.edit {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 15px;
+
+    border-radius: 12px;
+}
+
+.edit.active {
+    display: inline-flex;
+}
+
+
+.edit input {
+    color: #E0E1E3;
+    background: #3897E5;
+    border: #3897E5 solid 1px;
+    border-radius: 12px;
+    padding: 8px;
+
+    font-size: 10pt;
+}
+
+.edit input::placeholder {
+    color: #E0E1E3;
+}
+
+.edit button {
+    width: 10vw;
+    border-radius: 12px;
+
+    font-size: 9.5pt;   
+    color: #E0E1E3;
+    background: #3897E5;
+    border: #3897E5 solid 1px;
+
+    padding: 4px;
+}
+
+.edit p {
+    color: #ea2b2b;
+}
+
+@media only screen and (max-width: 850px)  {
+    .config {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin: 16px 0;
+    }
+
+    .config span {
+        margin: 0;
+    }
+
+    .config span button {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+
+        padding: 8px;
+        border-radius: 12px;
+    }
+
+    .config span button svg{
+        display: inline;
+    }
+
+    .edit {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+
+        padding: 15px;
+        margin: 10px 0;
+
+        border-radius: 12px;
+    }
+
+    .edit.active {
+        display: inline-flex;
+    }
+
+    .edit input {
+        color: #E0E1E3;
+        background: #3897E5;
+        border: #3897E5 solid 1px;
+        border-radius: 12px;
+        padding: 8px;
+
+        font-size: 10pt;
+    }
+
+    .edit input::placeholder {
+        color: #E0E1E3;
+    }
+
+    .edit button {
+        width: auto;
+        border-radius: 12px;
+
+        font-size: 9.5pt;   
+        color: #E0E1E3;
+        background: #3897E5;
+        border: #3897E5 solid 1px;
+
+        padding: 4px;
+    }
+
+ }

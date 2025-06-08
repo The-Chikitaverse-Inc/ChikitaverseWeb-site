@@ -1,10 +1,12 @@
-.profile section {
+.profileheader {
     display: flex;
     align-items: center;
     gap: 20px;
+
+    margin: 20px 0;
 }
 
-.profile img {
+.profileheader img {
     width: 100px;
     height: 100px;
     display: inline;
@@ -13,14 +15,14 @@
 }
 
 @media only screen and (max-width: 850px) {
-    .profile section {
+    .profileheader {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 20px;
     }
 
-    .profile section h2 {
+    .profileheader h2 {
         font-size: 11.5pt;
     }    
 }

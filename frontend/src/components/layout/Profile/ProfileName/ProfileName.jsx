@@ -1,5 +1,5 @@
 'use client'
-import { useAuth } from "@/lib/firebase/useAuth"
+import { useAuth } from "@/lib/firebase/use"
 import styles from  './ProfileName.module.css'
 
 export default function ProfileName() {

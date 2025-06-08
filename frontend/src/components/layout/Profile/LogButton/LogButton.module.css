@@ -1,5 +1,5 @@
 .button {
-    display: block;
+    display: inline;
     margin: 20px 0;
 }
 
@@ -19,4 +19,9 @@
     background: #eb2b3b;
     border-radius: 15px;
     color: #E6E6E6;
+}
+
+.exit svg, .open svg {
+    display: inline;
+    margin:  0 5px;
 }

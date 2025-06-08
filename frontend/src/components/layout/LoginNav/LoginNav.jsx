@@ -1,6 +1,6 @@
 "use client"
 import Link from "next/link";
-import { useAuth } from "@/lib/firebase/useAuth";
+import { useAuth } from "@/lib/firebase/use";
 import styles from './LoginNav.module.css'
 
 export default function LoginNav() {

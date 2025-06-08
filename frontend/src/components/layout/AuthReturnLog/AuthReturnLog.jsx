@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { useAuth } from "@/lib/firebase/useAuth";
+import { useAuth } from "@/lib/firebase/use";
 
 export default function AuthReturnLog({ children }) {
   const { user, loading } = useAuth();
