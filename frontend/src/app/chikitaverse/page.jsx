@@ -21,10 +21,6 @@ export default function Chikitaverse() {
                             <CardChikitaverse logo='roblox.png' link='https://www.roblox.com/pt/communities/35567222/The-Chikitaverse-Inc#!/about' title='TCInc. Comunidade' game='Roblox'/>
                                 <CardChikitaverse logo='roblox.png' link='https://www.roblox.com/pt/games/91016125083941/ChikitaVoice-Acesso-antecipado' title='Chikita Voice' game='Roblox'/>
                     </span>
-                    <section>
-                        <h2>Atividade:</h2>
-                            <RobloxCard/>
-                    </section>
                 </article>
             </Section>
         </>

@@ -10,7 +10,7 @@ export default async function RobloxCard() {
       <section className={styles.robloxcard}>
           <div>
             <h3>Game Roblox: {chikitaVoice ? chikitaVoice.name : 'Carregando..'}</h3>
-              <img src="/logoChikitavoice.png" alt="Logo Chikita Voice" />
+              <img src="/logoChikitaVoice.png" alt="Logo Chikita Voice" />
           </div>
           <span>
               <p className={styles.status}>Pessoas Ativas: {compactNotation(chikitaVoice ? chikitaVoice.playing : 'None')}</p>
