@@ -1,6 +1,7 @@
 //! Components
 import Section from "@/components/layout/Section/Section";
 import RobloxCard from "@/components/ui/RobloxCard/RobloxCard";
+import Mural from "@/components/ui/Mural/Mural";
 
 export default function Home() {
   return (
@@ -18,8 +19,9 @@ export default function Home() {
                 </button>
             </a>
         </span>
-        <h2>Atividade:</h2>
-        <RobloxCard/>
+          <Mural/>
+            <h2>Atividade:</h2>
+              <RobloxCard/>
         </article>
       </Section>
     </>

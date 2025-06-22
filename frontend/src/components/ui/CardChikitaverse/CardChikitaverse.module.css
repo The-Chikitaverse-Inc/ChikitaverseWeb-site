@@ -3,8 +3,6 @@
     flex-direction: column;
     align-items: center;
 
-    background: #1c4c73;
-    border: #1c4c73 solid 1px;
     border-radius: 15px;
 
     padding: 10px;
@@ -21,9 +19,8 @@
 }
 
 .card_ch:hover {
-    border: #325068 solid 1px;
     border-radius: 25px;
-    background: #325068;
+    opacity: 0.8;
 
     box-shadow: #000 0 4px 3px 0;
 }
@@ -48,8 +45,6 @@
         flex-direction: column;
         align-items: center;
     
-        background: #1c4c73;
-        border: #1c4c73 solid 1px;
         border-radius: 15px;
         box-sizing: border-box;
     

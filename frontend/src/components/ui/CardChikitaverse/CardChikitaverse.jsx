@@ -9,7 +9,7 @@ export default function CardChikitaverse({logo, link, title, game}) {
     const vrgame = game
 
         return (
-            <a href={vrlink} target='_blank' className={styles.card_ch}>
+            <a href={vrlink} target='_blank' className={`${styles.card_ch} highlightcolors`}>
                 <Image src={vrlogo} width={95} height={95} alt='Link Chikitaverse' className={styles.imagesize}/>
                     <h4>{vrtitle}</h4>
                         <p>{vrgame}</p>
