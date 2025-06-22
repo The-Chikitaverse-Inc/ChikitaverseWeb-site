@@ -6,6 +6,7 @@ import ProfilePic from '@/components/layout/Profile/ProfilePic/ProfilePic'
 import ProfileName from '@/components/layout/Profile/ProfileName/ProfileName'
 import { LogButton } from '@/components/layout/Profile/LogButton/LogButton'
 import ConfigProfile from '@/components/layout/Profile/ConfigProfile/ConfigProfile'
+import Mural from '@/components/ui/Mural/Mural'
 
 export const metadata = {
     title: 'Profile',
@@ -24,6 +25,7 @@ export default function Profile() {
                     <ConfigProfile/>
                     <LogButton/>
                 </article>
+                <Mural/>
             </Section>
         </>
     )
