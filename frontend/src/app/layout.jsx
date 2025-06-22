@@ -44,10 +44,13 @@ export default function RootLayout({ children }) {
           <meta property="og:title" content="Chikitaverse" />
             <meta property="og:image" content="/logochikitaverse.png" />
               <meta property="og:type" content="website" />
+                <meta name="description" content="Entre no Chikitaverso para poder explora as teias cosmicas de Todo o multiverso de Chikita" />
+                  <meta name="author" content="The Chikitaverse Inc."/>
+          
 
           <meta name="twitter:card" content="logochikitaverse" />
             <meta name="twitter:title" content="Chikitaverse" />
-              <meta name="twitter:description" content="Entre no Chikitaverso poder explora as teias cosmicas de Todo o multiverso de Chikita" />
+              <meta name="twitter:description" content="Entre no Chikitaverso para poder explora as teias cosmicas de Todo o multiverso de Chikita" />
                 <meta name="twitter:image" content="/logochikitaverse.png" />
 
          <Script

@@ -26,7 +26,6 @@ export default function Mural() {
             username: user.displayName || user.email,
             text,
         })
-
         setText('')
     }
 
@@ -37,7 +36,7 @@ export default function Mural() {
             id: doc.id,
             ...doc.data()
     }))
-            setMessages(msg) // ✅ aqui
+            setMessages(msg)
         })
         return () => unSubcrise()
     }, [])
@@ -48,7 +47,7 @@ export default function Mural() {
                 {user ? (
                     <form onSubmit={sendMessage}>
                         <textarea
-                            placeholder="Escreva sua mensagem..."
+                            placeholder="Como anda o Chikitaverso?"
                             value={text}
                             onChange={(e) => setText(e.target.value)}
                             className="highlightcolors"
