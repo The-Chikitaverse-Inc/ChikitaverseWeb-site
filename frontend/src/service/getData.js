@@ -7,6 +7,7 @@ export default async function getData(api) {
         headers: {
           "key": `${process.env.KEYACCES}`
         }
-     });
-    return res.json();
+      })
+      
+      return res.json()
   }
