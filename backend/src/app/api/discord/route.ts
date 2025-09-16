@@ -1,40 +1,28 @@
-import { NextRequest, NextResponse } from "next/server";
+import axios from "axios";
+import { NextResponse } from "next/server";
 
-function code403(request: NextRequest) {
-    const authHeader = request.headers.get('key')
-
-    if (!authHeader || authHeader !== `Bearer ${process.env.KEY}`) {
+export async function GET(request: NextResponse) {
+    const key = request.headers.get('key')
+    if (key !== process.env.KEYASSC) {
         return NextResponse.json({
-            error: 'Acesso não autorizado',
-            code: 403
-        })
-    }
-
-    return null
-}
-
-export async function GET(request: NextRequest) {
-    const middlewareResponse = code403(request)
-    if (middlewareResponse) { 
-        return middlewareResponse 
-    }
+            message: 'Acesso negado',
+            code: 403,
+        }, 
+          { status: 403 }
+        )
+    }  
 
     try {
-        const response = await fetch('https://discordapp.com/api/guilds/1311765282389360650/widget.json', {
-            headers: {
-                'User-Agent': 'Next.js Proxy',
-            }
-        })
-        
-        if (!response.ok) {
-            throw new Error(`Erro na Api externa: ${response.status} ${response.statusText}`)
-        }
-
-        const data = await response.json()
-        return NextResponse.json({
-            serveData: data,
-        })
-    } catch (error) {
-        //Todo: Corrijir o erro 403 da bagaçera
-    }
+    const resposta = await axios.get('https://discordapp.com/api/guilds/1311765282389360650/widget.json')
+    
+    return NextResponse.json({
+      serveData: resposta
+    })
+  } catch (erro) {
+    console.error(`Erro ao busca dados da Api: ${erro}`)
+    return NextResponse.json(
+      { erro: 'Não foi possível puzar dados do Servidor' },
+      { status: 500 }
+    )
+  }
 }
