@@ -1,17 +1,8 @@
 import axios from "axios";
-import { NextResponse } from "next/server";
+import { NextResponse, NextRequest} from "next/server";
 
+//Todo: Resolver ainda o problema do 403
 export async function GET(request: NextResponse) {
-    const key = request.headers.get('key')
-    if (key !== process.env.KEYASSC) {
-        return NextResponse.json({
-            message: 'Acesso negado',
-            code: 403,
-        }, 
-          { status: 403 }
-        )
-    }  
-
     try {
     const resposta = await axios.get('https://discordapp.com/api/guilds/1311765282389360650/widget.json')
     
