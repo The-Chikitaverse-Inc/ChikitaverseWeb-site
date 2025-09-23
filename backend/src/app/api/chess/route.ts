@@ -4,10 +4,10 @@ import { NextResponse} from "next/server";
 //Todo: Resolver ainda o problema do 403
 export async function GET() {
   try {
-    const resposta = await axios.get('https://discordapp.com/api/guilds/1311765282389360650/widget.json')
+    const resposta = await axios.get('https://api.chess.com/pub/club/the-chikitaverse-inc')
 
       return NextResponse.json({
-        serveData: resposta.data
+        dataChess: resposta.data
       })
     
   } catch (erro) {

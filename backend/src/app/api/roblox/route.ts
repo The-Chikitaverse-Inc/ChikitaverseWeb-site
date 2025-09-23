@@ -4,10 +4,14 @@ import { NextResponse} from "next/server";
 //Todo: Resolver ainda o problema do 403
 export async function GET() {
   try {
-    const resposta = await axios.get('https://discordapp.com/api/guilds/1311765282389360650/widget.json')
+    const resposta = await axios.get('https://games.roblox.com/v1/games', {
+      params: {
+        universeIds: '91016125083941'
+      }
+    })
 
       return NextResponse.json({
-        serveData: resposta.data
+        robloxData: resposta.data
       })
     
   } catch (erro) {
