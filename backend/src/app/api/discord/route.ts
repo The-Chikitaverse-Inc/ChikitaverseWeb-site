@@ -4,7 +4,7 @@ import { NextResponse} from "next/server";
 //Todo: Resolver ainda o problema do 403
 export async function GET() {
   try {
-    const resposta = await axios.get('https://discordapp.com/api/guilds/1311765282389360650/widget.json')
+    const resposta = await axios.get(`${process.env.DISCORDLINK}`)
 
       return NextResponse.json({
         serveData: resposta.data

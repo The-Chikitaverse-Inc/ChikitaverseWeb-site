@@ -4,7 +4,7 @@ import { NextResponse} from "next/server";
 //Todo: Resolver ainda o problema do 403
 export async function GET() {
   try {
-    const resposta = await axios.get('https://api.chess.com/pub/club/the-chikitaverse-inc')
+    const resposta = await axios.get(`${process.env.CHESSLINK}`)
 
       return NextResponse.json({
         dataChess: resposta.data

@@ -4,9 +4,9 @@ import { NextResponse} from "next/server";
 //Todo: Resolver ainda o problema do 403
 export async function GET() {
   try {
-    const resposta = await axios.get('https://games.roblox.com/v1/games', {
+    const resposta = await axios.get(`${process.env.ROBLOXLINK}`, {
       params: {
-        universeIds: '91016125083941'
+        universeIds: process.env.ROBLOXID
       }
     })
 
