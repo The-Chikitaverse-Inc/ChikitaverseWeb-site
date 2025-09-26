@@ -5,7 +5,6 @@ import { NextResponse} from "next/server";
 export async function GET() {
   try {
     const resposta = await axios.get(`${process.env.DISCORDLINK}`)
-
       return NextResponse.json({
         serveData: resposta.data
       })
