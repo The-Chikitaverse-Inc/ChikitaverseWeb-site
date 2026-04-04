@@ -1,0 +1,21 @@
+.header  {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+
+    padding: 0 1rem;
+
+    background: #3897E5;
+    border-radius: 1rem;
+
+    margin: 0.2rem 1.8rem;
+}
+
+.header h1 {
+    margin: 0;
+    color: #E0ECF0;
+
+    font-weight: 800;
+    font-size: 28pt;
+    text-shadow: 5px 2px #000;
+}
