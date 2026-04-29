@@ -1,0 +1,19 @@
+.main {
+    background: #E6E6E6;
+    border-radius: 12px;
+
+    padding: 0.2rem 1rem;
+    margin: 1rem 1.8rem;
+
+    box-sizing: border-box;
+}
+
+.main h2 {
+    font-size: 24pt;
+    font-weight: 800;
+}
+
+.main footer p {
+    margin: 0;
+    padding: 0;
+}

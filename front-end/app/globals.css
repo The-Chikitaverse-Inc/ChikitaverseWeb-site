@@ -1,9 +1,11 @@
 :root {
     --text-color: #0A1128;
+    --backgound-cor: #F4FBFF;
 }
 
 body {
     color: var(--text-color);
+    background: var(--backgound-cor);
     font-family: 'Inter', sans-serif;
 
     margin: 0;

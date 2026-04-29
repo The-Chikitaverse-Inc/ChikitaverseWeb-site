@@ -9,6 +9,8 @@
     border-radius: 1rem;
 
     margin: 0.2rem 1.8rem;
+
+    user-select: none;
 }
 
 .header h1 {
@@ -17,5 +19,4 @@
 
     font-weight: 800;
     font-size: 28pt;
-    text-shadow: 5px 2px #000;
 }
