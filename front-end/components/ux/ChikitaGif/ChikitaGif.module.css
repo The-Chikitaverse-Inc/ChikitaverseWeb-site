@@ -1,0 +1,17 @@
+.gif {
+    display: inline-flex;
+    flex-wrap: nowrap;
+
+    border: #f6f7f4 0.4rem solid;
+    border-radius: 1rem; 
+
+    margin: 1rem auto; 
+    user-select: none;
+}
+
+.gif span {    
+    background: #f6f7f4;
+
+    height: 12.45rem;
+    width: 4rem;
+}

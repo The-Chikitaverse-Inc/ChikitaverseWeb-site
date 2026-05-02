@@ -2,11 +2,9 @@ const style = require("./Main.module.css")
 
 import Aside from "../Aside/Aside"
 
-export default function Main({children, title, }) {
-    const titleHeading2 = `${title}`
+export default function Main({children, mtitle, }) {
+    const titleHeading2 = `${mtitle}`
     const date = new Date().getFullYear()
-
-    //todo: termina esta area do site
 
     return (
         <main className={style.main}>

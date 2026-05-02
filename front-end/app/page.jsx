@@ -1,11 +1,13 @@
-import Main from "@/components/layout/Main/Main";
+import MainPage from "@/components/layout/MainPage/MainPage";
+import ChikitaGif from "@/components/ux/ChikitaGif/ChikitaGif";
 
 export default function Home() {
   return (
     <>
-      <Main title='Home'>
-        
-      </Main>
+      <MainPage title='Home'>
+        <p>Bem vindo ao Chikitaverso, O multiverso das Chikitas.</p>
+          <ChikitaGif/>
+      </MainPage>
     </>
   );
 }
