@@ -1,0 +1,25 @@
+.navitem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .2rem;
+
+    text-decoration: none;
+    padding: 0.2rem;
+
+    transition: all 0.2s ease-in;
+}
+
+.navitem:hover {
+    background: #afadad;
+    border-radius: 10px;
+
+    opacity: .8;
+    transform: scale(1.1);
+}
+
+.navitem h3 {
+    color: #0A1128;
+    font-weight: 500;
+    font-size: 14.8pt;
+}
