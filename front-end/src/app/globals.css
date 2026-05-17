@@ -1,11 +1,12 @@
 :root {
     --text-color: #0A1128;
+    --chikita-tranparente: url(../../public/chikita_tranparent.png);
     --backgound-cor: #F4FBFF;
 }
 
 body {
     color: var(--text-color);
-    background: var(--backgound-cor);
+    background: var(--backgound-cor) repeat scroll 0/100px;
     font-family: 'Inter', sans-serif;
 
     margin: 0;

@@ -1,5 +1,6 @@
 const style = require('./Aside.module.css')
 import NavItem from '@/components/ux/NavItem/Navitem'
+import DiscordNav from "@/components/ux/DiscordNav/DiscordNav";
 
 export default function Aside() {
     return (
@@ -7,6 +8,8 @@ export default function Aside() {
             <h3>Paginas</h3>
                 <NavItem title='Home' ssvg='home.svg' link='/'/>
                 <NavItem title='Chikitaverse' ssvg='apps.svg' link='/chikitaverse' />
+
+                <DiscordNav/>
         </aside>
     )
 }

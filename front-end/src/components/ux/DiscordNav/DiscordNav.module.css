@@ -1,0 +1,53 @@
+
+.discord {
+    background: #5865F2;
+    color: #E0ECF0;
+
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.discord span {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+
+    margin: 0.3rem 0;
+}
+
+.discord span h4 {
+    margin: 0;
+    font-weight: 900;
+}
+
+.dc_information {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+
+    margin: 1rem;
+}
+
+.dc_information h6, .dc_information p {
+    margin: 0;
+}
+
+.dc_information h6 {
+    font-size: 12pt;
+    font-weight: 700;
+}
+
+.dc_information p {
+    font-weight: 600;
+}
+
+.linkdc button{
+    margin: 0.8rem;
+    padding: 0.5rem;
+
+    font-size: 10pt;
+
+    background: #E0E3FF;
+    border: #E0E3FF solid 1px;
+    border-radius: 0.5rem;
+}
