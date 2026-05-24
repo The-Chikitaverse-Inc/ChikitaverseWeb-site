@@ -5,7 +5,7 @@ export default function ChikitaGif() {
     return (
         <div className={style.gif}>
             <span></span>
-                <Image alt="Chikikta Gif" src="/chikita.gif" width={200} height={200} priority/>
+                <Image alt="Chikikta Gif" src="/chikita.gif" width={200} height={200} priority unoptimized/>
             <span></span>
         </div>
     )

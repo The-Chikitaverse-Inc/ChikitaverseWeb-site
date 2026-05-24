@@ -15,7 +15,7 @@ export default async function DiscordNav() {
 
         const dataDiscord = await apiDiscord.json()
         const membersDiscord = await dataDiscord.discord_data.members
-        const countmembersDc = membersDiscord.length || 'Error'
+        const countmembersDc = membersDiscord.length
 
         return (
             <nav className={styles.discord} >
@@ -28,7 +28,7 @@ export default async function DiscordNav() {
                     <Image className={styles.logoChikitaverse} src='/chikitaverse_logo.jpg' alt='Logo Chikitaverse' width={100} height={100}/>
                     <h6>{dataDiscord.discord_data.name}</h6>
                         <p>Membros: {countmembersDc}</p>
-                         <p>Online: {dataDiscord.discord_data.presence_count || 0 }</p>
+                         <p>Online: {dataDiscord.discord_data.presence_count || 'Error' }</p>
                             <Link href={dataDiscord.discord_data.instant_invite || '#'} target='_blank' className={styles.linkdc}>
                                 <button>Enter Serve</button>
                             </Link>
