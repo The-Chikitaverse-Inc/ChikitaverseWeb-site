@@ -1,4 +1,5 @@
 const styles = require('./DiscordNav.module.css')
+
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -10,9 +11,7 @@ export default async function DiscordNav() {
             }
         })
 
-        if (!apiDiscord.ok) {
-            throw new Error(`Api Error: ${apiDiscord.status}`)
-        }
+        if (!apiDiscord.ok) return null
 
         const dataDiscord = await apiDiscord.json()
         const membersDiscord = await dataDiscord.discord_data.members
@@ -26,10 +25,11 @@ export default async function DiscordNav() {
                 </span>
 
                 <span className={styles.dc_information}>
+                    <Image className={styles.logoChikitaverse} src='/chikitaverse_logo.jpg' alt='Logo Chikitaverse' width={100} height={100}/>
                     <h6>{dataDiscord.discord_data.name}</h6>
                         <p>Membros: {countmembersDc}</p>
                          <p>Online: {dataDiscord.discord_data.presence_count || 0 }</p>
-                            <Link href={dataDiscord.discord_data.instant_invite} target='_blank' className={styles.linkdc}>
+                            <Link href={dataDiscord.discord_data.instant_invite || '#'} target='_blank' className={styles.linkdc}>
                                 <button>Enter Serve</button>
                             </Link>
                 </span>
@@ -37,7 +37,6 @@ export default async function DiscordNav() {
         )
 
     } catch (err) {
-        console.error(`Error: ${err}`)
         return (
             <nav>
                 <p>Error {err}</p>

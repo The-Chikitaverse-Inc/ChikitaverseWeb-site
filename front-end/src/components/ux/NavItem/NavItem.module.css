@@ -1,8 +1,9 @@
 .navitem {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: .2rem;
+    align-items: start;
+    gap: .4rem;
+
+    width: 100%;
 
     text-decoration: none;
     padding: 0.2rem;
